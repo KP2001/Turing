@@ -694,7 +694,7 @@ loop
         if input = 33 then
             put ""
             put "You walk to the bus station."
-            put "It's not too far from your house, just a couple of blocks away from your house."
+            put "It's not too far from your house, just a couple of blocks away."
 
             for i : 1 .. 10
                 put "." ..
@@ -1349,22 +1349,35 @@ loop
             put ""
             get input
         end if
-        
+
         if input = 80 then
-        put ""
-        put "So now you are headed to Florida, with a bus full of old people..."
-        put "You sit at the back of the bus and slump in your seat, unsure of when you can get back home."
-        put "Some old people are talking to you."
-        put "Old Lady 1 >> Would you like some butterscotch candy?"
-        put "Old Man >> WHE'ARR ME DEN-CHAS!?"
-        put "Old Lady 2 >> Who wants to play bus bingo!?"
-        put "Who will you talk to?"
-        put "Old Lady 1 [126]"
-        put "Old Lady 2 [127]"
-        put "Old Man [128]"
-        put ""
-        get input
+            put ""
+            put "So now you are headed to Florida, with a bus full of old people..."
+            put "You sit at the back of the bus and slump in your seat, unsure of when you can get back home."
+            put "Some old people are talking to you."
+            put "Old Lady 1 >> Would you like some butterscotch candy?"
+            put "Old Man >> WHE'ARR ME DEN-CHAS!?"
+            put "Old Lady 2 >> Who wants to play bus bingo!?"
+            put "Who will you talk to?"
+            put "Old Lady 1 [126]"
+            put "Old Lady 2 [127]"
+            put "Old Man [128]"
+            put ""
+            get input
         end if
+
+        if input = 81 then
+            put ""
+            put "You start to wave your hands and yell to get the bus driver to pull over."
+            put "The old man driving the bus peeks his head out of the window to look at you running and chasing the bus."
+            put "Bus Driver >> WHADDA WANT KIDDO?"
+            put "PULL OVER!!! [129]"
+            put "STOP!!! [130]"
+            put "AHHHHHHHHHHHHHHHHHHHHHHHHHHHHH!!! [131]"
+            put ""
+            get input
+        end if
+
 
 
 
