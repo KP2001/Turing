@@ -68,6 +68,7 @@ loop
     end loop
 
     if poi > hs then % writes to high score
+    cls
 	locate (5, 5)
 	put "New high score! ", poi, "! Please type your name"
 	get hsn : *
