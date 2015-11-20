@@ -16,6 +16,7 @@ The Turing repository has some guidelines and edduqite towards "Proper Gitting".
 - Making new files
 - Editing existing files
 - Commiting
+- Issues
 
 <b> < Making New Files > </b>
 
@@ -31,6 +32,7 @@ The Turing repository has some guidelines and edduqite towards "Proper Gitting".
 - Edits to a file must be meaningful and must change something within a file or files
 - The change should be large enough to signify an actual change such as documentation or the actual working or look of a program.
 - When editing someone's file, make a new branch and pull request and allow the owner of the file to accept or reject the change.
+- The owner of the file should be the only one merging pulls unless verbal permission is given for another person t merge it.
 
 <b> < Commiting > </b>
 
@@ -42,4 +44,17 @@ The Turing repository has some guidelines and edduqite towards "Proper Gitting".
 ``` Changed file version: v1.2.2 -> v1.2.3 ```
 
 ``` Fixed grammar: The pineapples are over their -> The pineapples are over there ```
-- Make a new branch for a commit or a batch of commits
+- Make a new branch for a commit or a batch of commits. Give your pull request a [WIP] label in the title if you are still adding more commits to it later on. You can go back to the branch that the pull request is for by changing the branch.
+- MAKE SURE YOU ARE COMMITING ON THE PROPER BRANCH
+- An admin will delete your branch once it is pulled
+
+<b> < Issues > </b>
+
+- When creating an issue, make your title short, explaining what the issue is.
+- In the description of the issue, describe what is wrong and how it could be possibly fixed.
+- Give the issue a label. Request to @NotNemesis if you need a label for this project through the Chat
+- When an issue is solved, create a comment on the issue that states which pull request fixes the issue. Replace the #1234 with the pull request number. Afterwards, close the issue. Example:
+``` This issue was fixed in pr #1234 ```
+
+
+
