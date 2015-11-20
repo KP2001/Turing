@@ -8,7 +8,7 @@ Within the Turing repository, there is only one rule.
 Please be appropriate and respectful to all. That means not making any rude or offensive files or comments about a person or a group of people.
 This also applies to the contents of your files.
 Failure to do so may result in the editing or removal of the comment or file. 
-Multiple offensives of this rule will result in loss of privileges to the repository or removal from the organization for a time or permanently.
+Multiple offenses of this rule will result in loss of privileges to the repository or removal from the organization for a time or permanently.
 
 <b> < Proper Gitting > </b>
 
