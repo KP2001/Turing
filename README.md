@@ -2,7 +2,7 @@
 Turing projects by Mad Octopus
 You can download Turing <a href="http://compsci.ca/holtsoft/" target="_blank">here.</a>
 <br>
-[Contributors](#contributors) | [List of Projects in this Repository](#list-of-projects-in-this-repository) | [Rules](rules.md)
+[Contributors](#contributors) | [List of Projects in this Repository](#list-of-projects-in-this-repository) | [Rules](CONTRIBUTING.md)
 
 
 #Contributors
