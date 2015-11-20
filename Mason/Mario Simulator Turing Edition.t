@@ -27,10 +27,10 @@ else
 end if
 %%%%%%% title screen %%%%%%%%%%%%%
     % Title %
-put "Mario Simulatior Turing Edition DEMO"
+put "Mario Simulatior Turing Edition Alpha"
 put "By Sonason"
 put ""
-put "Version Alpha 4.2"
+put "Version Alpha 5"
 put "Type [B] to start your adventure!"
 put "Type [M] for menu"
 put ""
@@ -57,7 +57,7 @@ if start = "1" then
 cls
     put ""
     put "Mario Simulatior Turing Edition"
-    put "Version 4.1"
+    put "Version 5"
     delay (999)
     colour (9)
     put "ORIGINAL CODE"
@@ -114,6 +114,10 @@ if start = "2" then
     colour (white)
     put "Restart system! Play without the annoyance of constantly restarting upon game over!"
     put "Also added Mad Octopus logo(Alpha 4.2)"
+      color (42)
+    put "November 20, 2015"
+    colour (white)
+    put "Start yer pirate adventure!(Alpha 5)"
     put "[B] to start game"
     put ""
     get start
@@ -888,7 +892,9 @@ put ""
 put "Mario is about to use SUPER SMASH 360 NOSCOPE PINGAS ATTACK!!!"
     delay (2500)
     put "Mario does not know that move."
-     put "Mario: What was the point then!?"
+    delay (999)
+     put "Mario:"
+      put "What was the point then!?"
     delay (999)
     put "POW!"
     delay (1500)
@@ -924,12 +930,146 @@ put "Mario is about to use SUPER SMASH 360 NOSCOPE PINGAS ATTACK!!!"
     else
     end if
     
-if input > "32" then
+    if input = "33" then
+    put ""
+    put "Port Toadstool"
+    delay (999)
+    put "Peach:"
+    put "Mario, help me!"
+delay (999)
+put "Mario:"
+    put "There they go!"
+    delay (999)
+    put "Mario:"
+    put "Now how to stop them..."
+      delay (999)
+    put "Please type '35' to continue."
+    delay (999)
+    put "...Or press '34' for spaghetti."
+    get input
+    else
+    end if  
+    
+      if input = "34" then
+    put ""
+    put "Mario:"
+    put "Oooh! Spaghetti!"
+    delay (999)
+    put "Toad:"
+    put "So I see you want spaghetti!"
+    put "Here! This bowl is on the house!"
+    delay (999)
+    put "...but can you handle the heat?"
+    delay (999)
+    put "Mario:"
+    put "Of course I can!"
+    delay (999)
+    put "'Eating noises'"
+    delay (2000)
+    put "AUGH! HOT HOT HOT!!!"
+    delay (999)
+    put "...Oops."
+    delay (999)
+    put "Please type '35' to continue."
+    get input
+    else
+    end if
+    
+    if input = "35" then
+    put ""
+    put "???:"
+    put "Step right up for the greatest improvement to boats ever!"
+    delay (999)
+    put "Mario:"
+    put "Huh?"
+delay (999)
+put "Toad:"
+    put "Motorboats! Free motorboats for a limited time!"
+    delay (999)
+    put "Mario:"
+    put "Oooh!"
+      delay (999)
+put "Wait, it's one of those pirates!"
+    delay (999)
+put "Get a motorboat!(36)"
+    delay (999)
+    put "After those pirates!(37)"
+    get input
+    else
+    end if  
+    
+    if input = "36" then
+put ""
+put "Mario:"
+    put "Hey! Can I have a boat?"
+    delay (999)
+     put "Toad:"
+      put "No problem!"
+    delay (2000)
+ put "Mario:"
+        put "Here we go!"
+    delay (1500)
+    put "Waah! It's sinking!"
+    delay (1200)
+    put "Blammit the bleight blimit!"
+    delay (1500)
+    colour (12)
+    put "GAME OVER, YEAH!"
+ put "(Mario drowned!)"  
+ delay (5000)
+            sfm := 2
+            delay (100)
+            sfm := 1
+            cls
+        else
+        end if
+    
+        if input = "37" then
+    put ""
+    put "'Uninspired super spy-like movie scene'"
+    delay (5000)
+    put "Mario:"
+    put "Gotcha you pirates! Now give me-"
+delay (999)
+put "Captain:"
+    put "We give ye what, lad?"
+    delay (999)
+    put "Mario:"
+    put "...I just want that map."
+      delay (999)
+put "Captain:"
+      put "No chance with that! Ye wanna join us..."
+    delay (999)
+    put "...ye better show us yer a pirate!"
+    delay (999)
+    put "Mario:"
+    put "Wah!"
+    delay (999)
+put "Sing a pirate song!(38)"
+    delay (999)
+    put "Tell 'em a story!(39)"
+      delay (999)
+    put "Show them yer 'booty'(38)"
+    get input
+    else
+    end if  
+        
+    end loop
+    
+   if input > "38" then
+put ""
+    put "Aye there laddies, and thank ye fer playing the Alpha!"
+    put "This is the end for now, but expect updates soon!"
+    put "Bye!"
+    put "-Sonason, dev"
+    delay (2500)
+end if
+    
+    if input > " " then
 put ""
     put "Hello and thank you for playing the Alpha!"
     put "This is the end for now, but expect updates soon!"
     put "Bye!"
     put "-Sonason, dev"
+    delay (2500)
 end if
-
-end loop
