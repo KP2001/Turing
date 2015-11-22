@@ -1412,5 +1412,18 @@ loop
             get input
         end if
 
+        if input = 85 then
+            put ""
+            put "TAKE 'EM OFF COURSE! THAT'S A GREAT IDEA!"
+            put "YOU DRIVE OVER A BRIDGE AND TURN LEFT INTO A WOODED AREA."
+            put "AS YOU DRIVE THROUGH THE FOREST, YOU HIT MANY TREE BRANCHES."
+            put "YOU HEAD NEAR A CROSSROADS. WHICH WAY WILL YOU TURN?"
+            put "LEFT! [136]"
+            put "RIGHT! [137]"
+            put "I DON'T KNOW! [138]"
+            put ""
+            get input
+        end if
+
     end loop
 end loop
