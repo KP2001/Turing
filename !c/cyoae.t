@@ -1400,9 +1400,17 @@ loop
             get input
         end if
 
-
-
-
+        if input = 84 then
+            put ""
+            put "THROW SOMETHING AT THE COPPERS. THAT'S A GREAT IDEA!"
+            put "YOU LOOK AROUND THE CAR AND FIND SOME THINGS YOU COULD THROW OUT THE WINDOW."
+            put "WHAT WILL YOU THROW AT THE COPPERS?"
+            put "PINEAPPLE! [133]"
+            put "ROCK! [134]"
+            put "CHAIR! [135]"
+            put ""
+            get input
+        end if
 
     end loop
 end loop
