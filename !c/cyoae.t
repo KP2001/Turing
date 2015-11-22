@@ -266,7 +266,11 @@ loop
         if input = 9 then
             put ""
             put "Yay! Cartoons! You watch your favourite show, LoofahJoe TriangleShirt."
-            delay (2000)
+            put "LoofahJoe >> Nye-hehehe! I sure do love seahorse riding!"
+            put "Rick >> Dur-hur-hur! Is mayonaise a condiment?"
+            put "Octopus >> Quiet down LoofahJoe! I'm trying to play the flute!"
+            put "Sir Lobster >> Arr-arr-arr! Currency!"
+            put "Chipmunk >> Oklahoma is OK!"
             put "The episode ends."
             put "What will you do now?"
             put "MORE CARTOONS!!! [18]"
@@ -422,7 +426,11 @@ loop
         if input = 18 then
             put ""
             put "Yay! Cartoons! (again) You watch your favourite show again"
-            delay (2000)
+            put "LoofahJoe >> Nye-hehehe! I sure do love seahorse riding!"
+            put "Rick >> Dur-hur-hur! Is mayonaise a condiment?"
+            put "Octopus >> Quiet down LoofahJoe! I'm trying to play the flute!"
+            put "Sir Lobster >> Arr-arr-arr! Currency!"
+            put "Chipmunk >> Oklahoma is OK!"
             put "The episode ends."
             put "What will you do now?"
             put "Go out [19]"
@@ -774,9 +782,9 @@ loop
         if input = 39 then
             put ""
             put "You turn around, only to find a monsterous dragon blocking your path."
-            put "The dragon asks,'Oh, hello there darling! Are you here for my precious?"
-            put "You reply that you were just leaving but the dragon doesn't believe you."
-            put "'Then let me see the proof!'"
+            put "Dragon >> Oh, hello there darling! Are you here for my precious?"
+            put "You >> I... I... was just... leaving!"
+            put "Dragon >> Then let me see the proof!"
             put "Suddenly, the dragon scorches your body to the point where only your bones remain."
             colour (12)
             put "YOU ARE DEAD!"
@@ -790,14 +798,14 @@ loop
 
         if input = 40 then
             put ""
-            put "You say hi."
+            put "You >> Hi!"
             for i : 1 .. 3
                 put "." ..
                 delay (1000)
             end for
             put "Oh wait, you're still here... Behind the tires..."
             put "They didn't hear you, maybe you should walk up to them?"
-            put "Type [66] to walk up to the people"
+            put "Type [139] to walk up to the people"
             put ""
             get input
         end if
@@ -826,8 +834,9 @@ loop
         if input = 42 then
             put ""
             put "As you learned in some form of previous or current education, strangers are bad and you need to run away from them."
-            put "You scream ''STRANGER DANGER!!!'' at the top of your lungs and start to run."
-            put "One of the people from the camp starts to chase you saying ''Hey wait!''."
+            put "You >> STRANGER DANGER!!!"
+            put "One of the people from the camp starts to chase you."
+            put "Stranger >> Hey wait!"
             put "You can't fool me dangerous stranger person!"
             put "Right at that moment, you trip on a pineapple and fall into the stomach acids of the beast!"
             put "Your last words are ''ARGBALARGABABHRG DARBN BABLAGRBABGGLARB PINEBLAGRBLARPLE!''"
@@ -891,8 +900,8 @@ loop
             put "Fine you big jerk! Don't tie your dumb shoes!"
             put "You tuck your laces into your shoes and start to leave the house."
             put "Just then, New Punidas, Lord of Shoes, appears!"
-            put "''YOU!'' he says in his booming voice."
-            put "''Due to your ignorance and lack of tying your shoes, I force you to 80 years of untying knots in dimension 982!''"
+            put "New Punidas >> YOU!"
+            put "New Punidas >> Due to your ignorance and lack of tying your shoes, I force you to 80 years of untying knots in dimension 982!"
             put "In the blink of an eye, you are sent to dimension 982 and must untie knots for the rest of your life!"
             colour (12)
             put "GAME OVER!"
@@ -968,8 +977,7 @@ loop
             put "You walk to Mario & Luigi's Spinnin' Spaghetti"
             put "(Hmm, those names seem familiar...)"
             put "You walk in where you are greeted by a small man wearing a mushroom on his head."
-            put "''Hi there!'' he says in his shrieking voice"
-            put "''Can I take your coat?''"
+            put "Mushroom Man >> Hi there! Can I take your coat?" 
             put "What will you do?"
             put "Give strange man your coat [75]"
             put "Keep your coat, this place gives you a creepy vibe [76]"
@@ -1039,7 +1047,7 @@ loop
             put "Ooh, someone's greedy, eh?"
             put "You grab your  Homer(C) Brand ''Outta Sight!'' baseball bat"
             put "(Remember kids, if it ain't Homer(C), it ain't gonna do a homer either!)"
-            put "You also grab a mask of Jerry Seinfeld and put it on your face to protect your identity."
+            put "You also grab a mask of Harry Seinfeld and put it on your face to protect your identity."
             put "But which bank will you rob?"
             put "Townville City Credit Union [87]"
             put "First Bank of Pineappleia [88]"
@@ -1424,6 +1432,8 @@ loop
             put ""
             get input
         end if
+        
+        % next free var -> 140
 
     end loop
 end loop
