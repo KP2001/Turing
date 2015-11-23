@@ -9,6 +9,16 @@ var input, res : int
 var sfm : int := 1
 var mo : int := Pic.FileNew ("mo.jpg")
 
+procedure death
+    colour (12)
+    put "GAME OVER!"
+    colour (white)
+    put "Type [0] to restart"
+    get res
+    sfm := 1
+    cls
+end death
+
 % Colouring %
 colour (white)
 colourback (7)
@@ -238,15 +248,9 @@ loop
         if input = 7 then
             put ""
             put "You crawl into a ball and cry. You cry so much that you get dehydrated and die."
-            colour (12)
-            put "YOU DIED!!!"
             colour (42)
             put "ACHIVEMENT GET! WUSS"
-            colour (white)
-            put "Type [0] to restart"
-            get res
-            sfm := 1
-            cls
+            death
         else
         end if
 
@@ -415,10 +419,7 @@ loop
             put "Fine! I'm leaving you!"
             colour (42)
             put "ACHIVEMENT GET! LEFT BY COMPUTER!"
-            put "Type [0] to restart"
-            get res
-            sfm := 1
-            cls
+            death
         else
             colour (white)
         end if
@@ -530,13 +531,7 @@ loop
             delay (4500)
             put "You land safely somehow."
             put "You wander forward into a busy highway..."
-            colour (12)
-            put "YOU ARE DEAD!"
-            colour (white)
-            put "Type [0] to restart"
-            get res
-            sfm := 1
-            cls
+            death
         else
         end if
 
@@ -550,14 +545,7 @@ loop
             put "You crash into some trash cans and the car flips over and explodes!"
             colour (42)
             put "ACHIVEMENT GET! VIDEOGAME LOGIC!"
-            colour (white)
-            colour (12)
-            put "YOU ARE DEAD!"
-            colour (white)
-            put "Type [0] to restart"
-            get res
-            sfm := 1
-        else
+            death
         end if
 
         if input = 25 then
@@ -629,12 +617,7 @@ loop
             end for
 
             put "Splat! You land hard and have nothing to break your fall."
-            colour (12)
-            put "YOU ARE DEAD!"
-            put "Type [0] to restart"
-            get res
-            sfm := 1
-        else
+            death
         end if
 
         if input = 29 then
@@ -642,14 +625,7 @@ loop
             put "So sad for a big boy/girl like you to get so far and start to cry."
             put "You start to cry. The beast that you are in and tries to talk to you, but he accidentally spits you out."
             put "Splat! You land far away from the beast and die on inpact from the fall."
-            colour (12)
-            put "YOU ARE DEAD!"
-            colour (white)
-            put "Type [0] to restart"
-            get res
-            sfm := 1
-            cls
-        else
+            death
         end if
 
         if input = 30 then
@@ -693,10 +669,7 @@ loop
             put "Why is everything dark now!?"
             put "Oh no! You went blind!"
             put "At this point, you can't continue your adventure :("
-            put "Type [0] to restart"
-            get res
-            sfm := 1
-            cls
+            death
         end if
 
         if input = 33 then
@@ -770,13 +743,7 @@ loop
             put "YEAH! You jump in the shiny stuff!"
             put "You try and taste the shiny stuff but you seem to swallow some by accident!"
             put "A dragon appears and tries to do the heimlich maneuver on you but it tears into your body with its claws instead..."
-            colour (12)
-            put "YOU ARE DEAD!"
-            put "Type [0] to restart"
-            put ""
-            get res
-            sfm := 1
-            cls
+            death
         end if
 
         if input = 39 then
@@ -786,14 +753,7 @@ loop
             put "You >> I... I... was just... leaving!"
             put "Dragon >> Then let me see the proof!"
             put "Suddenly, the dragon scorches your body to the point where only your bones remain."
-            colour (12)
-            put "YOU ARE DEAD!"
-            put "Type [0] to restart"
-            put ""
-            get res
-            sfm := 1
-            cls
-        else
+           death
         end if
 
         if input = 40 then
@@ -822,13 +782,7 @@ loop
             put ""
             put "*Snap-snap* Wake up! They left!"
             put "Now you're stuck here! Good job!"
-            colour (12)
-            put "GAME OVER!"
-            put "Type [0] to restart"
-            put ""
-            get res
-            sfm := 1
-            cls
+            death
         end if
 
         if input = 42 then
@@ -840,13 +794,7 @@ loop
             put "You can't fool me dangerous stranger person!"
             put "Right at that moment, you trip on a pineapple and fall into the stomach acids of the beast!"
             put "Your last words are ''ARGBALARGABABHRG DARBN BABLAGRBABGGLARB PINEBLAGRBLARPLE!''"
-            colour (12)
-            put "GAME OVER!"
-            put "Type [0] to restart"
-            put ""
-            get res
-            sfm := 1
-            cls
+           death
         end if
 
         if input = 43 then
@@ -903,13 +851,7 @@ loop
             put "New Punidas >> YOU!"
             put "New Punidas >> Due to your ignorance and lack of tying your shoes, I force you to 80 years of untying knots in dimension 982!"
             put "In the blink of an eye, you are sent to dimension 982 and must untie knots for the rest of your life!"
-            colour (12)
-            put "GAME OVER!"
-            put "Type [0] to restart"
-            put ""
-            get res
-            sfm := 1
-            cls
+            death
         end if
 
         if input = 47 then
@@ -921,13 +863,7 @@ loop
                 delay (1000)
             end for
             put "Then the computer makes you restart because you are a jerk >:D"
-            colour (12)
-            put "GAME OVER!"
-            put "Type [0] to restart"
-            put ""
-            get res
-            sfm := 1
-            cls
+            death
         end if
 
         if input = 48 then
@@ -977,7 +913,7 @@ loop
             put "You walk to Mario & Luigi's Spinnin' Spaghetti"
             put "(Hmm, those names seem familiar...)"
             put "You walk in where you are greeted by a small man wearing a mushroom on his head."
-            put "Mushroom Man >> Hi there! Can I take your coat?" 
+            put "Mushroom Man >> Hi there! Can I take your coat?"
             put "What will you do?"
             put "Give strange man your coat [75]"
             put "Keep your coat, this place gives you a creepy vibe [76]"
@@ -1130,13 +1066,7 @@ loop
             put "Police Officer >> Hello there citizen, may I ask you what are you doing with that shovel?"
             put "Police Officer >> And why is there an old woman laying on the ground!? You must have something to do with this!"
             put "Police Officer >> YOU ARE UNDER ARREST!!!!!!!!!!!!!!!!!!!!!!!!!!!1!"
-            colour (12)
-            put "You were arrested! GAME OVER!"
-            put "Type [0] to restart"
-            put ""
-            get res
-            sfm := 1
-            cls
+            death
         end if
 
         if input = 63 then
@@ -1432,8 +1362,21 @@ loop
             put ""
             get input
         end if
-        
-        % next free var -> 140
+
+        if input = 86 then
+            put ""
+            put "PULL OVER? ARE YOU OUT OF YOUR MIND!?"
+            put "YOU CAN'T QUIT SO EARLY! UGH, FINE..."
+            put "YOU PULL OVER ON THE SIDE OF A BRIDGE, BUT INSTEAD OF THE COPS PULLING OVER BEHIND YOU, THEY DRIVE OFF THE BRIDGE!"
+            put "I GUESS THAT WORKED OUT FOR THE BEST...?"
+            put "WHAT WILL YOU DO NOW THAT YOU ARE FREE?"
+            put "TACO HUT!!! [140]"
+            put "HELP THE COPS WHO ARE IN THE RIVER! [141]"
+            put "TURN MYSELF IN! I'M A BAD PERSON! [142]"
+            put ""
+            get input
+        end if
+
 
     end loop
 end loop
