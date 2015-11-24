@@ -271,7 +271,7 @@ loop
             put ""
             put "Yay! Cartoons! You watch your favourite show, LoofahJoe TriangleShirt."
             put "LoofahJoe >> Nye-hehehe! I sure do love seahorse riding!"
-            put "Rick >> Dur-hur-hur! Is mayonaise a condiment?"
+            put "Rick >> Durr-hur-hur! Is mayonnaise a condiment?"
             put "Octopus >> Quiet down LoofahJoe! I'm trying to play the flute!"
             put "Sir Lobster >> Arr-arr-arr! Currency!"
             put "Chipmunk >> Oklahoma is OK!"
@@ -288,7 +288,7 @@ loop
         if input = 10 then
             put ""
             put "You watch sports. It's football, Piggers vs The Touchdowns"
-            put "The game ends and THE PIGGERS WON!!! Thye are definitely going all out this year."
+            put "The game ends and THE PIGGERS WON!!! They are definitely going all out this year."
             put "What will you do now?"
             put "Watch another game [21]"
             put "Go out [19]"
@@ -303,7 +303,7 @@ loop
             colour (42)
             put "ACHIVEMENT GET! BORING"
             colour (white)
-            put "You watch the news. That's boring, even the achivement knows that."
+            put "You watch the news. That's boring, even the achievement knows that."
             put "It's a videogame, do something fun!"
             put "Will you still watch the news?"
             put "Yes, I know what I'm doing [22]"
@@ -428,7 +428,7 @@ loop
             put ""
             put "Yay! Cartoons! (again) You watch your favourite show again"
             put "LoofahJoe >> Nye-hehehe! I sure do love seahorse riding!"
-            put "Rick >> Dur-hur-hur! Is mayonaise a condiment?"
+            put "Rick >> Durr-hur-hur! Is mayonnaise a condiment?"
             put "Octopus >> Quiet down LoofahJoe! I'm trying to play the flute!"
             put "Sir Lobster >> Arr-arr-arr! Currency!"
             put "Chipmunk >> Oklahoma is OK!"
@@ -462,10 +462,10 @@ loop
             put "ACHIVEMENT GET! FUN VIDEOGAME STUFF 1!"
             colour (white)
             put "Yay! You did something cool for once in the game."
-            put "When you land on your front lawn, there is an old lady walking her chihuahua. They're both scared."
+            put "When you land on your front lawn, there is an old lady walking her Chihuahua. They're both scared."
             put "She stares at you. You're covered in glass shards."
             delay (2677)
-            put "She screams and runs away, dragging her chihuahua along with."
+            put "She screams and runs away, dragging her Chihuahua along with."
             put "You're good with making friends."
             put "What will you do now?"
             put "Look at the sun [32]"
@@ -492,7 +492,7 @@ loop
             colour (12)
             put "Whoops!"
             colour (white)
-            put "The TV you threw hit and killed an old lady and her chihuahua."
+            put "The TV you threw hit and killed an old lady and her Chihuahua."
             colour (42)
             put "ACHIVEMENT GET! LOSE YOUR MARBLES!"
             colour (white)
@@ -624,7 +624,7 @@ loop
             put ""
             put "So sad for a big boy/girl like you to get so far and start to cry."
             put "You start to cry. The beast that you are in and tries to talk to you, but he accidentally spits you out."
-            put "Splat! You land far away from the beast and die on inpact from the fall."
+            put "Splat! You land far away from the beast and die on impact from the fall."
             death
         end if
 
@@ -650,14 +650,14 @@ loop
             put "Where do you want to go now that you've tied your shoes?"
             put "Bus Stop [49]"
             put "Taco Hut [50]"
-            put "Mario & Luigi's Spinnin' Spaghettii Diner [51]"
+            put "Mario & Luigi's Spinnin' Spaghetti Diner [51]"
             put "Pineapple Burger [52]"
             get input
         end if
 
         if input = 32 then
             put ""
-            put "Cool! I watched''Science That!''the other day and heard you can get superpowers by looking at the sun!"
+            put "Cool! I watched ''Science That!'' the other day and heard you can get superpowers by looking at the sun!"
             put "You stare into the sun" ..
 
             for i : 1 .. 6
@@ -685,7 +685,7 @@ loop
             put "You see the bus station from a distance, AND A BUS THAT'S LEAVING!"
             put "THAT BUS IS THE ONLY ONE TO SUPER TACO HUT!!!"
             put "WHAT WILL YOU DO NOW?!"
-            put "RUN FOR THE BUS!!!! AHHHHHHHHHHHHHHH![53]"
+            put "RUN FOR THE BUS!!!! AHHHHHHHHHHHHHHH! [53]"
             put "RUNRUNRUNRUNRUNRUN! [54]"
             put "Lose all hope and go to the regular Taco Hut, I heard they're practically the same [55]"
             put ""
@@ -742,18 +742,18 @@ loop
             put ""
             put "YEAH! You jump in the shiny stuff!"
             put "You try and taste the shiny stuff but you seem to swallow some by accident!"
-            put "A dragon appears and tries to do the heimlich maneuver on you but it tears into your body with its claws instead..."
+            put "A dragon appears and tries to do the Heimlich maneuver on you but it tears into your body with its claws instead..."
             death
         end if
 
         if input = 39 then
             put ""
-            put "You turn around, only to find a monsterous dragon blocking your path."
+            put "You turn around, only to find a monstrous dragon blocking your path."
             put "Dragon >> Oh, hello there darling! Are you here for my precious?"
             put "You >> I... I... was just... leaving!"
             put "Dragon >> Then let me see the proof!"
             put "Suddenly, the dragon scorches your body to the point where only your bones remain."
-           death
+            death
         end if
 
         if input = 40 then
@@ -794,7 +794,7 @@ loop
             put "You can't fool me dangerous stranger person!"
             put "Right at that moment, you trip on a pineapple and fall into the stomach acids of the beast!"
             put "Your last words are ''ARGBALARGABABHRG DARBN BABLAGRBABGGLARB PINEBLAGRBLARPLE!''"
-           death
+            death
         end if
 
         if input = 43 then
@@ -803,7 +803,7 @@ loop
             put "(Trust me, I'm a professional)"
             put "You push one of the tires onto your foot and scream in actual pain."
             put "One of the people come running to you to see if you're okay."
-            put "Another two people bring a strecher and put you on it."
+            put "Another two people bring a stretcher and put you on it."
             put "Some details start to become a little hazy because you're in A LOT of pain."
             put "They roll you inta the..." ..
             delay (6000)
@@ -822,7 +822,7 @@ loop
             put "You walk into the Taco Hut."
             put "What will you do now?"
             put
-                "Order a Quintuple-Fried Triple Bypass Burrito with Quadruple-Deep-Fried tortilla bread drizzed in chocolate     (comes with Jumbo-Sized Nachos, small fountain drink, and free fast-track admission to local hospital) [68]"
+                "Order a Quintuple-Fried Triple Bypass Burrito with Quadruple-Deep-Fried tortilla bread drizzled in chocolate     (comes with Jumbo-Sized Nachos, small fountain drink, and free fast-track admission to local hospital) [68]"
             put "Go to the bathroom, I really have to go! [69]"
             put "Grab a seat, my legs are tired [70]"
             put ""
@@ -831,13 +831,13 @@ loop
 
         if input = 45 then
             put ""
-            put "Since your stubborness is getting you nowhere, you sit down and you try to tie them again."
+            put "Since your stubbornness is getting you nowhere, you sit down and you try to tie them again."
             put "You tie your shoes and GET THEM RIGHT!"
             %    put "achivement"
             put "Where do you want to go now that you've tied your shoes?"
             put "Bus Stop [49]"
             put "Taco Hut [50]"
-            put "Mario & Luigi's Spinnin' Spaghettii Diner [51]"
+            put "Mario & Luigi's Spinnin' Spaghetti Diner [51]"
             put "Pineapple Burger [52]"
             put ""
             get input
@@ -900,7 +900,7 @@ loop
                 delay (1000)
                 put "." ..
             end for
-            put "Yay! We're here! Can you order me a quasadila with extra sour cream?"
+            put "Yay! We're here! Can you order me a quesadilla with extra sour cream?"
             put "Type [74] to continue"
             put ""
             get input
@@ -924,8 +924,8 @@ loop
         if input = 52 then
             put ""
             put "So it's Pineapple Burger then?"
-            put "You walk to Pineapple Burger and when you get there, pineapples are protesting against the resturant!"
-            put "Their signs say 'Pineapples Matter!' and 'Pineapple Canabalists!'"
+            put "You walk to Pineapple Burger and when you get there, pineapples are protesting against the restaurant!"
+            put "Their signs say 'Pineapples Matter!' and 'Pineapple Cannibalists!'"
             put "I hope they know that Pineapple Burger uses synthetic pineapple slices!"
             put "What will you do?"
             put "Put facts aside and protest with them! [78]"
@@ -1017,9 +1017,9 @@ loop
             put ""
             put "Ooh! Murdermurdermurder!"
             put "I've always wanted to do it!!!"
-            put "But your computer game with a sub-consious tells you no."
+            put "But your computer game with a sub-conscious tells you no."
             put "Aww, but why? >:("
-            put "Your computer game tells you how bad killing is, gives you the pros and cons about jail, and then hands you a pamphet on prison"
+            put "Your computer game tells you how bad killing is, gives you the pros and cons about jail, and then hands you a pamphlet on prison"
             put "Why thank you CYOAE! You've set me on the right path!"
             put "As a treat, CYOAE tells you to go to Taco Hut as a treat!"
             put "Type [74] to continue"
@@ -1030,8 +1030,8 @@ loop
         if input = 60 then
             put ""
             put "Oh man! I never meant to be a bad guy!"
-            put "Those police siren echos get louder and louder, so you decide to turn yourself in..."
-            put "This has gotten from an epic adventure to a criminal endevour."
+            put "Those police siren echoes get louder and louder, so you decide to turn yourself in..."
+            put "This has gotten from an epic adventure to a criminal endeavour."
             put "A day later, you are in court on trial about the murder of Ms. Sowannitz's and her dog."
             put "What do you plead?"
             put "Guilty, absolutely guilty [93]"
@@ -1052,7 +1052,7 @@ loop
             put "What will you say, ''Ms. Sowannitz''?"
             put "WHAT'S THAT, SONNY? I CAN'T HEAR YOU!!! [96]"
             put "Nonono, nothing happening here! [97]"
-            put "Yeah, some guy just threw a TV out their window and then some old lady and her dog died when they git hit by it!Also that old lady is me and that dog was mine [98]"
+            put "Yeah, some guy just threw a TV out their window and then some old lady and her dog died when they git hit by it! Also that old lady is me and that dog was mine [98]"
             put " "
             get input
         end if
@@ -1118,7 +1118,7 @@ loop
             put "TCAN >> That giant metal beast is still visible in the distance. Estimates say that it will arrive in town on Tuesday."
             put "TCAN >> That's all for today, I guess... I'm not sure since my script isn't very clear. Who wrote this?"
             put "TCAN >> Also, don't forget to enter in YYZ-TCAN's contest, where you could win a trip to Er-Uhh-Pin-Plop Island!"
-            put "Oh boy! A contest! That sound's like fun! What will you do now?"
+            put "Oh boy! A contest! That sounds like fun! What will you do now?"
             put "Sign up for that contest! [103]"
             put "Watch Democratic People's Republic of North Dakota State-Run TV[64]"
             put "Watch NTV [65]"
@@ -1135,7 +1135,7 @@ loop
             put "Very Nice Person >> Wha.. yo... ...me?"
             put "You scream out ''ARRRRRGGGGGG MY FOOOOOOOOOOOOOOOOOOOT!''"
             put "You hear rumbling... and feel shaking..."
-            put "Very Nice Guy >> We ha... ...o time! Give him 100cc's of..!"
+            put "Very Nice Guy >> We ha... ...o time! Give ‘em 100cc's of..!"
             put "You fall asleep. Type [104] to continue."
             put ""
             get input
@@ -1143,8 +1143,8 @@ loop
 
         if input = 68 then
             put ""
-            put "Woah, you got a big appitite, eh?"
-            put "So you order that abombination of food-kind and are told that you can sit down and wait for your food because it could be a while."
+            put "Woah, you got a big appetite, eh?"
+            put "So you order that abomination of food-kind and are told that you can sit down and wait for your food because it could be a while."
             put "Where will you sit?"
             put "Table [105]"
             put "Booth [106]"
@@ -1179,7 +1179,7 @@ loop
         if input = 71 then
             put ""
             put "You choose to chase the bus, but how will you do that?"
-            put "RUN FOR THE BUS!!!! AHHHHHHHHHHHHHHH![53]"
+            put "RUN FOR THE BUS!!!! AHHHHHHHHHHHHHHH! [53]"
             put "RUNRUNRUNRUNRUNRUN! [54]"
             put ""
             get input
@@ -1223,7 +1223,7 @@ loop
             put ""
             put "You give the strange mushroom man your coat."
             put "Mushroom Man >> Thank you! Follow me to your table for... one!"
-            put "You follow the Mushroom Man through the restaurant. The restaurant is decorated similarily to a videogame you know."
+            put "You follow the Mushroom Man through the restaurant. The restaurant is decorated similarly to a videogame you know."
             put "The Mushroom Man pulls out a chair for you to sit on and just as you do, he gives you a menu."
             put "(Heh, it's like there's ''two'' of them)"
             put "Mushroom Man >> What would you like to order?"
@@ -1238,7 +1238,7 @@ loop
             put ""
             put "You tell the strange man that you'll keep your coat."
             put "Mushroom Man >> Oh OKAY then... Follow me to your table."
-            put "You follow the Mushroom Man through the restaurant. The restaurant is decorated similarily to a videogame you know. He brings you to a table."
+            put "You follow the Mushroom Man through the restaurant. The restaurant is decorated similarly to a videogame you know. He brings you to a table."
             put "Mushroom Man >> SIT DOWN."
             put "He forcefully gives you a menu."
             put "Mushroom Man >> ORDER SOMETHING OR GET OUT."
@@ -1255,7 +1255,7 @@ loop
             put "Where will you go now?"
             put "Bus Stop [49]"
             put "Taco Hut [50]"
-            put "Mario & Luigi's Spinnin' Spaghettii Diner [51]"
+            put "Mario & Luigi's Spinnin' Spaghetti Diner [51]"
             put ""
             get input
         end if
@@ -1377,6 +1377,21 @@ loop
             get input
         end if
 
+        if input = 87 then
+            put ""
+            put "But they're not even a bank, they're a credit union!"
+            put "(And a local one too!)"
+            put "How could you do such a thing!?"
+            put "If you say so, you walk to the credit union and enter."
+            put "You >> THIS IS A BANK ROBBERY! GIMME ALL YOUR MONEY"
+            put "Teller >> Sir, this is a credit union...:"
+            put "(Aww poo, she's right! What will you do now?)"
+            put "Say ''I mean, THIS IS A CREDIT UNION ROBBERY!'' [143]"
+            put "Say ''But saying that it's a credit union robbery doesn't give the same effect...'' [144]"
+            put "Smash your baseball bat on the ground and say ''GIMME YOUR MONEY!'' [145]"
+            put ""
+            get input
+        end if
 
     end loop
 end loop
