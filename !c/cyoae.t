@@ -1417,10 +1417,11 @@ loop
             put "In a sophisticated matter! [149]"
             put "ROB THEM AS NORMAL! ROB THEM AS NORMAL! [150]"
             put "ROB THEM AS NORMAN! ROB THEM AS NORMAN! [151]"
+            put "PONZI SCHEME THEM! [152]"
             put ""
             get input
         end if
-
+        
 
     end loop
 end loop
