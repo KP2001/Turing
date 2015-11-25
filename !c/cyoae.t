@@ -1438,7 +1438,23 @@ loop
             get input
         end if
 
+        if input = 91 then
+            put ""
+            put "Tacos? Okay then, let's steal some tacos!"
+            put "You make your way to the Interntional Taco Vault, which suprisingly isn't too far from your house."
+            put "I think you went here on a school field trip once, didn't you?"
+            put "You go in and try to be ''cool'' when doing it."
+            put "You walk up to the clerk behind the table."
+            put "You >> Yeah, hi umm... I'm here to withdrawl some... tacos..."
+            put "Clerk >> Can I see some ID?"
+            put "''My ID!? I'M JUST HERE TO TAKE SOME TACOS!'' [155]"
+            put "''Oh, my ID? Yeah, let me... just... grab... it...'' [156]"
+            put "EXITEXITEXIT [157]"
+            put ""
+            get input
+        end if
 
+        
 
     end loop
 end loop
