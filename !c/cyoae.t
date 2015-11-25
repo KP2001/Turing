@@ -1135,7 +1135,7 @@ loop
             put "Very Nice Person >> Wha.. yo... ...me?"
             put "You scream out ''ARRRRRGGGGGG MY FOOOOOOOOOOOOOOOOOOOT!''"
             put "You hear rumbling... and feel shaking..."
-            put "Very Nice Guy >> We ha... ...o time! Give ‘em 100cc's of..!"
+            put "Very Nice Guy >> We ha... ...o time! Give 'em 100cc's of..!"
             put "You fall asleep. Type [104] to continue."
             put ""
             get input
@@ -1392,6 +1392,22 @@ loop
             put ""
             get input
         end if
+
+        if input = 88 then
+            put ""
+            put "First Bank of Pineappleia? Very nice! Good rates AND they have a bowl of lollipops at every teller!"
+            put "You get there and point the end of the bat at the teller, who is a pineapple."
+            put "You >> GIMME ALL YOUR MONEY!!!"
+            put "Pineapple Teller >> ..."
+            put "You >> ..."
+            put "Pineapple Teller >> ..."
+            put "(Darn, she's a tough customer! What will you do?)"
+            put "Give to what she said [147]"
+            put "Refuse [148]"
+            put ""
+            get input
+        end if
+
 
     end loop
 end loop
