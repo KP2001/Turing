@@ -1408,6 +1408,19 @@ loop
             get input
         end if
 
+        if input = 89 then
+            put ""
+            put "You go to Silverman Sacs, the rich people bank, I bet they have a lot of money!"
+            put "You walk up to the enterance, and then a though comes up."
+            put "These people are rich... and sophistiated! Maybe I should try to blend in with them instead of robbing them as normal."
+            put "How will you rob this place?"
+            put "In a sophisticated matter! [149]"
+            put "ROB THEM AS NORMAL! ROB THEM AS NORMAL! [150]"
+            put "ROB THEM AS NORMAN! ROB THEM AS NORMAN! [151]"
+            put ""
+            get input
+        end if
+
 
     end loop
 end loop
