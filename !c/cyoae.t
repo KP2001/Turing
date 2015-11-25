@@ -1421,7 +1421,24 @@ loop
             put ""
             get input
         end if
-        
+
+        if input = 90 then
+            put ""
+            put "Yes! Digital Media! You decide to pirate the LoofahJoe episode ''Pie Delivery''"
+            put "You decide to watch some of the episode while you torrent it."
+            put "LoofahJoe >> Greasy Burger pie is the pie for you and meeeeee!!!"
+            put "Octopus >> Back it up Loofah!"
+            put "LoofahJoe >> Look Octopus! A rock! The settlers used to ride these babies for miles!"
+            put "The download ends. You also decide to download some me-mes."
+            put "Rare frog, check. Purple guy, check. WHAT IS THAT!?, check."
+            put "Then, you hear a knock at the door. What will you do?"
+            put "Let's see who that is! [153]"
+            put "NO! I'M BUSY WITH MY ME-MES [154]"
+            put ""
+            get input
+        end if
+
+
 
     end loop
 end loop
