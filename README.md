@@ -129,9 +129,9 @@ Counts all the numbers from 1 to a specified number
 <br>
 Contributors : sonason
 <br>
-Version : v0.4.2
+Version : v5.1a
 <br>
-Last Updated Nov 9, 2015
+Last Updated Nov 24, 2015
 <br>
 Description
 <br>
