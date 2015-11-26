@@ -129,13 +129,13 @@ Counts all the numbers from 1 to a specified number
 <br>
 Contributors : sonason
 <br>
-Version : v5.1a
+Version : v6
 <br>
-Last Updated Nov 24, 2015
+Last Updated Nov 26, 2015
 <br>
 Description
 <br>
-It's your typical day in the Mushroom Kngdom: Peach has once again been kidnapped! Can Mario save her? Based on Mario Simulatior Interactive by SMG4
+It's your typical day in the Mushroom Kngdom: Peach has once again been kidnapped! Can Mario save her? Based on 'Mario Simulatior Interactive' by SMG4
 <hr>
 
 <a href="https://github.com/madoctopus/Turing/blob/master/Rafael/periodical.t" target="_blank">Periodical</a>
