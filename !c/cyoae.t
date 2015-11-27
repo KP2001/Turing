@@ -1454,7 +1454,25 @@ loop
             get input
         end if
 
-        
+        if input = 92 then
+            put ""
+            put "You decide to steal a pineapple from city hall, it's filled with them! Who will notice if you steal one?"
+            put "You sneak inside city hall and stumble upon the mayor's office. You peek inside and see that there is a         pineapple on the office chair."
+            put "(It's on the chair for a reason, THAT MEANS IT HAS VALUE!)"
+            put "You sneak in and do a cool summersault before grabbing the pineapple and sneaking out."
+            put "(I wish someone saw my summersault D: )"
+            put "When you get to your house and hide the pineapple, you notice that it moves around a lot..."
+            put "You don't think... you kidnapped... the mayor...?"
+            put "HOW COULD YOU DO SUCH A THING!? HOW DO YOU NOT KNOW THAT THE MAYOR IS A PINEAPPLE!?"
+            put "You pace around the room nervously. What will you do now?"
+            put "RETURN THE MAYOR [158]"
+            put "DITCH HIM SOMEWHERE [159]"
+            put "EAT HIM [160]"
+            put "OH MAN OH JEEZ [161]"
+            put ""
+            get input
+        end if
+
 
     end loop
 end loop
