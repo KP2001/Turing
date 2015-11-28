@@ -1473,6 +1473,26 @@ loop
             get input
         end if
 
+        if input = 93 then
+            put ""
+            put "Judge >> Now son, what I say what do you plead?"
+            put "You >> Guilty, absolutely guilty..."
+            put "Judge >> Boy, I am astounded at your honesty. I will reduce your sentance from 5 minutes to 2 minutes and 30    seconds."
+            put "You are escorted out of the court and into prision. Your sentance begins."
+            for i : 1 .. 150
+                put "." ..
+                delay (1000)
+            end for
+            put ""
+            put "A prision guard comes to your cell and unlocks it. You are free now."
+            put "Where will you go now?"
+            put "Home [162]"
+            put "Taco Hut, I crave tacos [163]"
+            put "The Cemetary [164]"
+            put ""
+            get input
+        end if
+
 
     end loop
 end loop
