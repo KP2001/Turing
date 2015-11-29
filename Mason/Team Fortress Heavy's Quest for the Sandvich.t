@@ -52,8 +52,11 @@ put "He punched all of your blood out!"
 delay (1500)
 color (red)
 put "GAME OVER, YEAH!"
-delay (500)
+delay (1500)
 put "You got the 'Upset Russian' Ending."
+delay (1500)
+put "1/10: Never disagree with a Heavy."
+delay (999)
 put "Type any key to reset the game"
 get inres
 res := 1
@@ -99,6 +102,7 @@ put "Heavy:"
 put "WHO TOUCHED SASHA!?"
 delay (999)
 put "Hey you! Who touched Sasha!?"
+delay (999)
 put "Scout[7]"
 delay (999)
 put "Spy[8]"
@@ -119,8 +123,11 @@ put "Nooooo! Sentry fire!"
 delay (1500)
 color (red)
 put "GAME OVER, YEAH!"
-delay (500)
+delay (1500)
 put "You got the 'Texas-Tech Style Revenge' Ending."
+delay (1500)
+put "4/10: Haven't you seen spies try that?"
+delay (999)
 put "Type any key to reset the game"
 get inres
 res := 1
@@ -153,6 +160,7 @@ put "...but I never really was on your side."
 delay (999)
 put "Heavy:"
 put "Augh!"
+delay (999)
 put "Run!!![10]"
 delay (999)
 put "Punch him in da face![11]"
@@ -179,14 +187,65 @@ put "My back! It's broken!"
 delay (1500)
 color (red)
 put "GAME OVER, YEAH!"
-delay (500)
-put "You got the 'Dere's My Ball!' Ending." 
+delay (1500)
+put "You got the 'Dere's My Ball!' Ending."
+delay (1500)
+put "2/10: Trust me: baseballs are more dangerous than you think."
+delay (999)
 put "Type any key to reset the game"
 get inres
 res := 1
 end if
 
-if input > 9 or input < 0 then
+if input = 10 then
+cls
+put "Heavy:"
+put "RUN!"
+delay (2000)
+color (red)
+put "STAB!"
+delay (999)
+color (black)
+put "Heavy:"
+put "OMNOMNOM!"
+delay (2000)
+put "BLU Spy:"
+put "Your precious sandvich won't save you now, fatty!"
+delay (1500)
+color (red)
+put "GAME OVER, YEAH!"
+delay (1500)
+put "You got the 'Backstabbed' Ending."
+delay (1500)
+put "1/10: Retreating from a spy is always a victory for the latter."
+delay (999)
+put "Type any key to reset the game"
+get inres
+res := 1
+end if
+
+if input = 11 then
+cls
+put "Heavy:"
+put "You must die!"
+delay (999)
+color (red)
+put "POW!"
+delay (999)
+color (black)
+put "Spy:"
+put "AAAAUGH!"
+delay (2000)
+put "Heavy:"
+put "Now who to ask?"
+delay (999)
+put "Sniper[12]"
+delay (999)
+put "Soldier[13]"
+get input
+end if
+
+if input > 11 or input < 0 then
 cls
 put "End of game/Invalid answer."
 put "Please type any key to restart the game."
