@@ -1411,8 +1411,8 @@ loop
         if input = 89 then
             put ""
             put "You go to Silverman Sacs, the rich people bank, I bet they have a lot of money!"
-            put "You walk up to the enterance, and then a though comes up."
-            put "These people are rich... and sophistiated! Maybe I should try to blend in with them instead of robbing them as normal."
+            put "You walk up to the entrance, and then a though comes up."
+            put "These people are rich... and sophisticated! Maybe I should try to blend in with them instead of robbing them as normal."
             put "How will you rob this place?"
             put "In a sophisticated matter! [149]"
             put "ROB THEM AS NORMAL! ROB THEM AS NORMAL! [150]"
@@ -1441,11 +1441,11 @@ loop
         if input = 91 then
             put ""
             put "Tacos? Okay then, let's steal some tacos!"
-            put "You make your way to the Interntional Taco Vault, which suprisingly isn't too far from your house."
+            put "You make your way to the International Taco Vault, which surprisingly isn't too far from your house."
             put "I think you went here on a school field trip once, didn't you?"
             put "You go in and try to be ''cool'' when doing it."
             put "You walk up to the clerk behind the table."
-            put "You >> Yeah, hi umm... I'm here to withdrawl some... tacos..."
+            put "You >> Yeah, hi umm... I'm here to withdraw some... tacos..."
             put "Clerk >> Can I see some ID?"
             put "''My ID!? I'M JUST HERE TO TAKE SOME TACOS!'' [155]"
             put "''Oh, my ID? Yeah, let me... just... grab... it...'' [156]"
@@ -1477,18 +1477,18 @@ loop
             put ""
             put "Judge >> Now son, what I say what do you plead?"
             put "You >> Guilty, absolutely guilty..."
-            put "Judge >> Boy, I am astounded at your honesty. I will reduce your sentance from 5 minutes to 2 minutes and 30    seconds."
-            put "You are escorted out of the court and into prision. Your sentance begins."
+            put "Judge >> Boy, I am astounded at your honesty. I will reduce your sentence from 5 minutes to 2 minutes and 30    seconds."
+            put "You are escorted out of the court and into prison. Your sentence begins."
             for i : 1 .. 150
                 put "." ..
                 delay (1000)
             end for
             put ""
-            put "A prision guard comes to your cell and unlocks it. You are free now."
+            put "A prison guard comes to your cell and unlocks it. You are free now."
             put "Where will you go now?"
             put "Home [162]"
             put "Taco Hut, I crave tacos [163]"
-            put "The Cemetary [164]" % cemetary scene 1: absolute sadness
+            put "The Cemetery [164]" % cemetery scene 1: absolute sadness
             put ""
             get input
         end if
@@ -1497,18 +1497,18 @@ loop
             put ""
             put "Judge >> Now son, what I say what do you plead?"
             put "You >> Guilty, absolutely guilty..."
-            put "Judge >> Very well. I sentance you to 5 minutes in jail"
-            put "You are escorted out of the court and into prision. Your sentance begins."
+            put "Judge >> Very well. I sentence you to 5 minutes in jail"
+            put "You are escorted out of the court and into prison. Your sentence begins."
             for i : 1 .. 300
                 put "." ..
                 delay (1000)
             end for
             put ""
-            put "A prision guard comes to your cell and unlocks it. You are free now."
+            put "A prison guard comes to your cell and unlocks it. You are free now."
             put "Where will you go now?"
             put "Home [162]"
             put "Taco Hut, I crave tacos [163]"
-            put "The Cemetary [165]" % cemetary scene 2: some sadness
+            put "The Cemetery [165]" % cemetery scene 2: some sadness
             put ""
             get input
         end if
@@ -1517,18 +1517,18 @@ loop
         put ""
             put "Judge >> Now son, what I say what do you plead?"
             put "You >> Not guilty your honour"
-            put "Judge >> Is that so? Boy I am ashamed myself! I sentance you to 10 minutes in jail!"
-            put "You are escorted out of the court and into prision. Your sentance begins."
+            put "Judge >> Is that so? I sentence you to 10 minutes in jail!"
+            put "You are escorted out of the court and into prison. Your sentence begins."
             for i : 1 .. 600
                 put "." ..
                 delay (1000)
             end for
             put ""
-            put "A prision guard comes to your cell and unlocks it. You are free now."
+            put "A prison guard comes to your cell and unlocks it. You are free now."
             put "Where will you go now?"
             put "Home [162]"
             put "Taco Hut, I crave tacos [163]"
-            put "The Cemetary [166]" % cemetary scene 3: no sadness
+            put "The Cemetery [166]" % cemetery scene 3: no sadness
             put ""
             get input
         end if
