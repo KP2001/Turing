@@ -1513,6 +1513,25 @@ loop
             get input
         end if
         
+        if input = 95 then
+        put ""
+            put "Judge >> Now son, what I say what do you plead?"
+            put "You >> Not guilty your honour"
+            put "Judge >> Is that so? Boy I am ashamed myself! I sentance you to 10 minutes in jail!"
+            put "You are escorted out of the court and into prision. Your sentance begins."
+            for i : 1 .. 600
+                put "." ..
+                delay (1000)
+            end for
+            put ""
+            put "A prision guard comes to your cell and unlocks it. You are free now."
+            put "Where will you go now?"
+            put "Home [162]"
+            put "Taco Hut, I crave tacos [163]"
+            put "The Cemetary [166]" % cemetary scene 3: no sadness
+            put ""
+            get input
+        end if
         
 
 
