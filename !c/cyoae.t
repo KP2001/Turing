@@ -1488,10 +1488,33 @@ loop
             put "Where will you go now?"
             put "Home [162]"
             put "Taco Hut, I crave tacos [163]"
-            put "The Cemetary [164]"
+            put "The Cemetary [164]" % cemetary scene 1: absolute sadness
             put ""
             get input
         end if
+
+        if input = 94 then
+            put ""
+            put "Judge >> Now son, what I say what do you plead?"
+            put "You >> Guilty, absolutely guilty..."
+            put "Judge >> Very well. I sentance you to 5 minutes in jail"
+            put "You are escorted out of the court and into prision. Your sentance begins."
+            for i : 1 .. 300
+                put "." ..
+                delay (1000)
+            end for
+            put ""
+            put "A prision guard comes to your cell and unlocks it. You are free now."
+            put "Where will you go now?"
+            put "Home [162]"
+            put "Taco Hut, I crave tacos [163]"
+            put "The Cemetary [165]" % cemetary scene 2: some sadness
+            put ""
+            get input
+        end if
+        
+        
+
 
 
     end loop
