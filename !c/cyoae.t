@@ -1512,9 +1512,9 @@ loop
             put ""
             get input
         end if
-        
+
         if input = 95 then
-        put ""
+            put ""
             put "Judge >> Now son, what I say what do you plead?"
             put "You >> Not guilty your honour"
             put "Judge >> Is that so? I sentence you to 10 minutes in jail!"
@@ -1532,7 +1532,20 @@ loop
             put ""
             get input
         end if
-        
+
+        if input = 96 then
+            put ""
+            put "''Ms. Sowannitz'' >> WHAT'S THAT, SONNY? I CAN'T HEAR YOU!!!"
+            put "Police Officer >> *Starts moving hands in different ways and shapes*"
+            put "(Oh, he's doing sign language...)"
+            put "What will you do?"
+            put "Sign back [167]"
+            put "Say ''WHAT'S THAT, SONNY? I CAN'T HEAR YOU!!!'' [168]"
+            put ""
+            get input
+        end if
+
+
 
 
 
