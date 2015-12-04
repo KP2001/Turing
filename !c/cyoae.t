@@ -1545,6 +1545,19 @@ loop
             get input
         end if
 
+        if input = 97 then
+            put ""
+            put "''Ms. Sowannitz'' >> Nonono, nothing happening here!"
+            put "Police Officer >> Nothing you say? Mind if I ask a few questions then?"
+            put "How will you respond?"
+            put "Mind if you stop asking me questions!? [169]"
+            put "Go ahead sweetie! [170]"
+            put "Err... Bah hambug and all all that sorts! [171]"
+            put ""
+            get input
+        end if
+
+
 
 
 
