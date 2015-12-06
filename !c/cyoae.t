@@ -1557,6 +1557,17 @@ loop
             get input
         end if
 
+        if input = 98 then
+            put ""
+            put "''Ms. Sowannitz'' >> Yeah, some guy just threw a TV out their window and then some old lady and her dog died    when they git hit by it! Also that old lady is me and that dog was mine!"
+            put "Police Officer >> Uhh... Excuse me? That was quite a mouthful! Could you repeat?"
+            put "What will you do?"
+            put "Repeat yourself [172]"
+            put "Say something else [173]"
+            put "Refuse! [174]"
+            put ""
+            get input
+        end if
 
 
 
