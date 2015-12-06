@@ -1083,7 +1083,7 @@ loop
         if input = 64 then
             put ""
             put "You watch the Democratic People's Republic of North Dakota State-Run TV (or DPRNDSRTV for short)"
-            put "DPRNDSRTV >> We interupt this broadcast of ''Days of Our Democratic People's Lives'' to bring you a special    report."
+            put "DPRNDSRTV >> We interrupt this broadcast of ''Days of Our Democratic People's Lives'' to bring you a special    report."
             put "DPRNDSRTV >> The leader is great, the leader is good!"
             put "DPRNDSRTV >> The leader is great, the leader is good!"
             put "DPRNDSRTV >> The leader is great, the leader is good!"
@@ -1547,7 +1547,7 @@ loop
             put "How will you respond?"
             put "Mind if you stop asking me questions!? [169]"
             put "Go ahead sweetie! [170]"
-            put "Err... Bah hambug and all all that sorts! [171]"
+            put "Err... Bah humbug and all that sorts! [171]"
             put ""
             get input
         end if
@@ -1555,7 +1555,7 @@ loop
         if input = 98 then
             put ""
             put
-                "''Ms. Sowannitz'' >> Yeah, some guy just threw a TV out their window and then some old lady and her dog died    when they git hit by it! Also that old lady is me and that dog was mine!"
+                "''Ms. Sowannitz'' >> Yeah, some guy just threw a TV out their window and then some old lady and her dog died    when they got hit by it! Also that old lady is me and that dog was mine!"
             put "Police Officer >> Uhh... Excuse me? That was quite a mouthful! Could you repeat?"
             put "What will you do?"
             put "Repeat yourself [172]"
@@ -1575,7 +1575,7 @@ loop
             put ""
             put "Huh, no bus..."
             put "What will you do now?"
-            put "Keep waiting for thr bus [175]"
+            put "Keep waiting for the bus [175]"
             put "Go to Taco Hut [176]" % done
             put "Crawl into a ball and cry [177]" % done
             put ""
@@ -1598,3 +1598,4 @@ loop
 
     end loop
 end loop
+
