@@ -1582,6 +1582,17 @@ loop
             get input
         end if
 
+        if input = 101 then
+            put ""
+            put "You >> The leader is great, the leader is good"
+            put "Now what will you do?"
+            put "Watch NTV [65]"
+            put "Watch Tri-City Area News [66]"
+            put "Chant again [178]" % not going to be redirect
+            put "Chant something different [179]"
+            put ""
+            get input
+        end if
 
 
 
