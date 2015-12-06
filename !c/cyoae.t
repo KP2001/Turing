@@ -817,7 +817,7 @@ loop
             get input
         end if
 
-        if input = 44 then
+        if input = 44 or input = 74 then
             put ""
             put "You walk into the Taco Hut."
             put "What will you do now?"
@@ -1176,7 +1176,7 @@ loop
             get input
         end if
 
-        if input = 71 then
+        if input = 71 or input = 99 then
             put ""
             put "You choose to chase the bus, but how will you do that?"
             put "RUN FOR THE BUS!!!! AHHHHHHHHHHHHHHH! [53]"
@@ -1212,11 +1212,6 @@ loop
             put "Wave at the lady who is about to walk past you [115]"
             put ""
             get input
-        end if
-
-        if input = 74 then
-            %put "rdr to 44"
-            input := 44
         end if
 
         if input = 75 then
@@ -1559,7 +1554,8 @@ loop
 
         if input = 98 then
             put ""
-            put "''Ms. Sowannitz'' >> Yeah, some guy just threw a TV out their window and then some old lady and her dog died    when they git hit by it! Also that old lady is me and that dog was mine!"
+            put 
+                "''Ms. Sowannitz'' >> Yeah, some guy just threw a TV out their window and then some old lady and her dog died    when they git hit by it! Also that old lady is me and that dog was mine!"
             put "Police Officer >> Uhh... Excuse me? That was quite a mouthful! Could you repeat?"
             put "What will you do?"
             put "Repeat yourself [172]"
@@ -1568,7 +1564,6 @@ loop
             put ""
             get input
         end if
-
 
 
 
