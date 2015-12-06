@@ -245,7 +245,7 @@ loop
         else
         end if
 
-        if input = 7 then
+        if input = 7 or input = 177 then
             put ""
             put "You crawl into a ball and cry. You cry so much that you get dehydrated and die."
             colour (42)
@@ -890,7 +890,7 @@ loop
         else
         end if
 
-        if input = 50 then
+        if input = 50 or input = 176 then
             put ""
             put "Yes, let's go to Taco Hut, they have the BEST tacos!"
             put "Do you know why it's called Taco Hut? Because the first taco was served in a hut."
@@ -1554,13 +1554,30 @@ loop
 
         if input = 98 then
             put ""
-            put 
+            put
                 "''Ms. Sowannitz'' >> Yeah, some guy just threw a TV out their window and then some old lady and her dog died    when they git hit by it! Also that old lady is me and that dog was mine!"
             put "Police Officer >> Uhh... Excuse me? That was quite a mouthful! Could you repeat?"
             put "What will you do?"
             put "Repeat yourself [172]"
             put "Say something else [173]"
             put "Refuse! [174]"
+            put ""
+            get input
+        end if
+
+        if input = 100 then
+            put ""
+            put "You sit on the bench to wait for the next bus."
+            for i : 1 .. 60
+                put "." ..
+                delay (50)
+            end for
+            put ""
+            put "Huh, no bus..."
+            put "What will you do now?"
+            put "Keep waiting for thr bus [175]"
+            put "Go to Taco Hut [176]" % done
+            put "Crawl into a ball and cry [177]" % done
             put ""
             get input
         end if
