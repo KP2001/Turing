@@ -1594,6 +1594,26 @@ loop
             get input
         end if
 
+        if input = 102 then
+            put ""
+            put "So you keep watching NTV for another hour."
+            put "This time it's a show about adolescent coyotes."
+            put "This show intregues you a bit, so you have a listen."
+            put "Scott >> I am a coyote, hear me howl!!!"
+            put "Lidia >> No you're not! You're a Scott, okai?"
+            put "Scott >> No, I am a coyote!!!"
+            put "Lidia >> Fine then, I'll just be a Lidia."
+            put "Scott >> No, Lidia, we can be coyotes together!"
+            put "Lidia >> But I don't want to smell bad!" % authour's note, i'm just going to assume this is how the actual show goes
+            put "The episode ends. What will you do now?"
+            put "Watch Democratic People's Republic of North Dakota State-Run TV[64]"
+            put "Watch Tri-City Area News [66]"
+            put "Keep watching NTV [180]"
+            put "Go online and talk about the Adolescent Coyote episode [180]"
+            put ""
+            get input
+        end if
+
 
 
     end loop
