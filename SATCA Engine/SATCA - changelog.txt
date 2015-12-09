@@ -1,7 +1,7 @@
 Super Amazing Turing Choosable Adventure Engine (SATCA) Changelog
 
 v1.2
-+ Created new folder and moved file to new folder
++ Created new folder and moved engine file to new folder
 SATCA.t -> SATCA Engine\SATCA.t
 
 + Changed variable name and references within file
@@ -17,7 +17,7 @@ logo
 ___________________________________________________________________________________
 
 v1.1
-+ Changed ver.
++ Changed version number
 v1.0 -> v1.1
 
 + Added MadOctopus logo (https://goo.gl/Qup6O8) and if structure with
