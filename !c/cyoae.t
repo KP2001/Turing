@@ -1613,6 +1613,20 @@ loop
             put ""
             get input
         end if
+        
+        if input = 103 then
+            put ""
+            put "So you go to the link provided at the bottom of the screen and start typing it out..."
+            put "http://www.yyz.tcan.com/website/yyz/yyz-website/contests/current-contests/win-a-trip-to-er-uhh-pin-plop-island-with-yyztcan-FINALPERFECTGREATLASTVERSION8.html"
+            put "Wow uhh... that's quite long for a website name..."
+            put "Regardless, you start putting in information:"
+            put "Name, address, favourite colour, birthday, credit card number, email address, drawing of cat..."
+            put "And... ENTER!"
+            put "You wait some time and long behold, the contest results come in!"
+            put "Type [181] to continue..."
+            put ""
+            get input
+        end if
 
 
 
