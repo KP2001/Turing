@@ -1627,9 +1627,17 @@ loop
             put ""
             get input
         end if
+        
+        if input = 104 then
+        put ""
+        put "You wake up, you are in the metal thingy, but don't know where exactly."
+        put "You are tied down on a strecher that's rolling around quite a bit."
+        put "You manage to undo the straps and start to explore but there are many strechers where you are and they are all rolling around."
+        put "Some of the people on the strechers hit you."
+        put "You >> Ow! Watch where you're going!"
+        
 
 
 
     end loop
 end loop
-
