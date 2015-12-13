@@ -1646,6 +1646,19 @@ loop
             get input
         end if
 
+        if input = 105 then
+            put ""
+            put "You sit at the tabe, because you like that you can give yourself some room between the table and seat."
+            put "You sit at a table near the window and look around the resturant."
+            put "You look at the booth that you were going to sit at and see a pineapple holding a katana dangling over it."
+            put "Oh. You are unsure how to feel."
+            put "You have to wait a bit for your food, so what will you do to waste time?"
+            put "Grab some sauce packets [185]"
+            put "Play on your phone [186]"
+            put "Put your head down [187]"
+            put ""
+            get input
+        end if
 
 
 
