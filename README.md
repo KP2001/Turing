@@ -138,7 +138,7 @@ Description
 It's your typical day in the Mushroom Kngdom: Peach has once again been kidnapped! Can Mario save her? Based on 'Mario Simulatior Interactive' by SMG4
 <hr>
 
-<a href="https://github.com/madoctopus/Turing/blob/master/Rafael/periodical.t" target="_blank">Periodical</a>
+<a href="https://github.com/madoctopus/Turing/blob/master/Rafael/Periodical/pt.t" target="_blank">Periodical</a>
 <br>
 Contributors : NotNemesis
 <br>
