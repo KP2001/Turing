@@ -1613,7 +1613,7 @@ loop
             put ""
             get input
         end if
-        
+
         if input = 103 then
             put ""
             put "So you go to the link provided at the bottom of the screen and start typing it out..."
@@ -1627,15 +1627,25 @@ loop
             put ""
             get input
         end if
-        
+
         if input = 104 then
-        put ""
-        put "You wake up, you are in the metal thingy, but don't know where exactly."
-        put "You are tied down on a strecher that's rolling around quite a bit."
-        put "You manage to undo the straps and start to explore but there are many strechers where you are and they are all rolling around."
-        put "Some of the people on the strechers hit you."
-        put "You >> Ow! Watch where you're going!"
-        
+            put ""
+            put "You wake up, you are in the metal thingy, but don't know where exactly."
+            put "You are tied down on a strecher that's rolling around quite a bit."
+            put "You manage to undo the straps and start to explore but there are many strechers where you are and they are all  rolling around."
+            put "Some of the people on the strechers hit you."
+            put "You >> Ow! Watch where you're going!"
+            put "Strecher Guy >> Sorry!"
+            put "You get out of the strecher room and walk down the corridor."
+            put "You see a sign and read it."
+            put "It's a map, where will you go?"
+            put "Cafeteria [182]"
+            put "Passenger Cabin [183]"
+            put "Engine Room [184]"
+            put ""
+            get input
+        end if
+
 
 
 
