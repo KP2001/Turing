@@ -1660,6 +1660,16 @@ loop
             get input
         end if
 
+        if input = 106 then
+            put ""
+            put "You sit at the booth, because you chose so."
+            put "You look around the resturant."
+            put "You hear a noise that sounds like something sliding down a rope."
+            put "You look above you, it's a pineapple with a katana."
+            put "You don't dodge in time, so you die."
+            death
+        end if
+
 
 
     end loop
