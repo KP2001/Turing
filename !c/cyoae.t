@@ -1670,6 +1670,20 @@ loop
             death
         end if
 
+        if input = 107 then
+            put ""
+            put "Oh yes! My order was to go!"
+            put "You walk back to the counter and wait around there."
+            put "Half an hour later, your food is ready!"
+            put "Cashier >> Do you have a vehicle with you to carry this... food?"
+            put "Cashier >> I can give you a wagon to wheel it home."
+            put "Will you take the wagon?"
+            put "Yes! I need that! [188]"
+            put "No thank you, I already have a vehicle [189]"
+            put ""
+            get input
+        end if
+
 
 
     end loop
