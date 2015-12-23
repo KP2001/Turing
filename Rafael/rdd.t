@@ -1,3 +1,5 @@
+% RDD (Random Dot Drawer) by NotNemesis
+
 View.Set ("graphics:max;max,nobuttonbar,title:RDD")
 var loc : array 1 .. 2 of int
 
