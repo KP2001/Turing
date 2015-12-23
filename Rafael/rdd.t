@@ -1,4 +1,5 @@
 % RDD (Random Dot Drawer) by NotNemesis
+% Experimental program, draws dots at random cordinates
 
 View.Set ("graphics:max;max,nobuttonbar,title:RDD")
 var loc : array 1 .. 2 of int
