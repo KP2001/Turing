@@ -43,121 +43,17 @@ loop
         put "By NotNemesis"
         put ""
         put "Type [0] to start your adventure!"
-        put "Type [1] for menu"
         put ""
         sfm := 0
         get v_menu
     end if
     % Menu %
-
     loop
-        if v_menu = 1 then
-            put ""
-            put "CREDITS [2]"
-            delay (200)
-            put "NEWS [3]"
-            delay (200)
-            put "CODE [4]"
-            delay (200)
-            put "START GAME [0]"
-            delay (200)
-            put "TYPE YOUR CHOICE."
-            put ""
-            get v_menu
-        else
-        end if
-
-        if v_menu = 2 then
-            put ""
-            put "Choose Your Own Adventure Epic!"
-            delay (999)
-            colour (9)
-            put "IDEA"
-            colour (14)
-            put "NotNemesis"
-            delay (999)
-            colour (9)
-            put "PROGRAMMING"
-            colour (14)
-            put "NotNemesis"
-            delay (999)
-            colour (9)
-            put "STORY"
-            colour (14)
-            put "NotNemesis"
-            delay (999)
-            put "Very special thanks to my family for supporting me and being around!"
-            delay (999)
-            colour (12)
-            put "PLEASE GIVE CREDIT IF YOU PLAN TO USE MY CODE. THANKS!"
-            delay (999)
-            colour (white)
-            put "NotNemesis (C) 2015"
-            colour (42)
-            put "[0] to start game or give a menu command [2,3,4]"
-            put ""
-            colour (white)
-            get v_menu
-        else
-        end if
-
-        if v_menu = 3 then
-            put ""
-            colour (14)
-            put "NEWS"
-            colour (42)
-            put "October 26, 2014"
-            colour (white)
-            put "Demo release!"
-            colour (42)
-            put "October 19, 2014"
-            colour (white)
-            put "Now in 1.2.2 Alpha!"
-            put "I got a screen now that is 900x700. Improvements, even if they're little!"
-            put ""
-            colour (42)
-            put "October 18, 2014"
-            colour (white)
-            put "Now in 1.2 Alpha!"
-            put "I added a menu for extra functions. There's credits, news (this), and something else that you might want to check out."
-            put ""
-            put "[0] to start game or give a menu command [2,3,4]"
-            put ""
-            get v_menu
-        end if
-
-        if v_menu = 4 then
-            put ""
-            colour (12)
-            put "1042"
-            colour (white)
-            put "[0] to start game or give a menu command [2,3,4]"
-            put ""
-            get v_menu
-        end if
-
-        if v_menu = 5 then
-            put "AND HIS NAME IS JOHN CENA!!!"
-            put "DUDUDUDUUUUU! DUDUDUDUUUU!"
-            put ""
-            get v_menu
-        end if
-
-        if v_menu = 6 then
-            put "DOOT DOOT SAYS THE SPOOKIE SKELETON"
-            put ""
-            get v_menu
-        end if
-
         if v_menu = 0 then
-            exit
-        end if
-
-        if v_menu > 6 then
+            exit else
             put "ERROR badinput, PLEASE PUT VALID COMMAND"
             get v_menu
         end if
-
     end loop
 
     % Game %
