@@ -18,6 +18,12 @@ put "You have ", mon, "NMC available. Type your bet amount"
 put ">> " ..
 get bet
 
+mon := mon - bet
+open : r, "w/" + name + ".txt", put
+put : r, name
+put : r, mon
+close : r
+
 put "Choose your chance"
 put "98% win rate, 1.0102x multiplier [1]" % <9800
 put "97% win rate, 1.0206x multiplier [2]" % <9700
