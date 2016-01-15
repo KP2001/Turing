@@ -1,0 +1,3 @@
+2
+Hello and welcome to NemBrowser!
+NemBrowser is a free and easy to use browser!
