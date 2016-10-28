@@ -4,7 +4,7 @@ var input1: string (1)
 
 %Sets the tittle, size, and position of the run window
 View.Set ("title: Michael's Random Number Program")
-View.Set ("graphics:500;115,nobuttonbar,position:600;540")
+View.Set ("graphics:500;115,nobuttonbar,position:600;535")
 
 
 loop
@@ -45,7 +45,7 @@ loop
     %Selects a random number
     put ""
     randint (number, x, y)
-    put "Your random number is ", number
+    put "Your random number is ", number, "."
 
     %Removes cursor for getch command
     setscreen("nocursor")
@@ -56,7 +56,7 @@ loop
         put "Do you wish to select a new random number?(y/n) " ..
         getch (input1)
         put input1
-        exit when input1 = "y" or input = "n"
+        exit when input1 = "y" or input1 = "n"
         put ""
         put "Error! Invalid input"
     end loop
@@ -65,7 +65,7 @@ loop
     setscreen("cursor")
     
     %Quits(or loops) the program
-    if input = "n" then
+    if input1 = "n" then
         return
     end if
     put ""
