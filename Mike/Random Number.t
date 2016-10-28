@@ -4,7 +4,7 @@ var input1: string (1)
 
 %Sets the tittle, size, and position of the run window
 View.Set ("title: Michael's Random Number Program")
-View.Set ("graphics:500;115,nobuttonbar,position:centre;middle")
+View.Set ("graphics:500;115,nobuttonbar,position:600;540")
 
 
 loop
