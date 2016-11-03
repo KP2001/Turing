@@ -1,0 +1,13 @@
+Magedude
+410
+270
+250
+150
+Fireball
+Zap
+Energy Blast
+Spirit Awakening
+50
+40
+70
+90
