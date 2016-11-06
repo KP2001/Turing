@@ -7,16 +7,12 @@ You can download Turing <a href="http://compsci.ca/holtsoft/" target="_blank">he
 
 #Contributors
 <a href="https://github.com/NotNemesis" target="_blank">NotNemesis</a>
-Contributed to:
-Clock, Choose Your Own Adventure Epic!, Draw.Mario, Dungeon Quest, (F)ART, Gambalo!, hack.t (Countomatic!), RapixGen, Super Battle Arena, SizeO, Small Clock (Development, Testing)
 <hr>
 <a href="https://github.com/MC47" target="_blank">MC47</a>
-Contributed to:
-Choose Your Own Adventure Epic!, Wiki
 <hr>
 <a href="https://github.com/sonason" target="_blank">sonason</a>
-Contributed to:
-Choose Your Own Adventure Epic!, Mario Simulator Turing Edition, Team Fortress: Heavy's Quest for the Sandvich (developer)
+<hr>
+<a href="https://github.com/mike6600" target="_blank">mike6600</a>
 <hr>
 
 #List of Projects in this Repository
