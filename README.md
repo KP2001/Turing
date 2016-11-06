@@ -10,7 +10,7 @@ You can download Turing <a href="http://compsci.ca/holtsoft/" target="_blank">he
 <hr>
 <a href="https://github.com/MC47" target="_blank">MC47</a>
 <hr>
-<a href="https://github.com/sonason" target="_blank">sonason</a>r)
+<a href="https://github.com/sonason" target="_blank">sonason</a>
 <hr>
 <a href="https://github.com/mike6600" target="_blank">mike6600</a>
 <hr>
