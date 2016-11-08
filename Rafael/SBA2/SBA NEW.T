@@ -49,7 +49,7 @@ procedure p2atk
     delay (4000)
 
     % Calculate actual damage
-    p2ad := p1cd - p1s (3)
+    p2ad := p2cd - p1s (3)
     p1s (0) -= p2ad
 end p2atk
 
