@@ -1,8 +1,7 @@
 % Super Battle Arena
 % Rafael Wiska-Ilnicki
-% TODO: Add test attacks and test attack stats
 
-% Variables
+% Variables %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 var p1fc, p2fc : int % Player's fighter choice
 var p1fcs, p2fcs : string
 var ver : string := "DEV ALPHA V1.2.5" % Version Number
@@ -29,7 +28,32 @@ var p2ad : int % P2 Actual Damage
 var p2df : int % P2 Defending
 var p2cd : int % P2 Calculated Damage
 
-% Title
+% Procedures %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% P1 Attack
+procedure p1atk
+    % Calculate P1's calculated damage
+    p1cd := p1s (2) + p1as (p1ac)
+    put p1n, "(P1) used ", p1an (p1ac), " for ", p1cd, " damage!"
+    delay (4000)
+
+    % Calculate actual damage
+    p1ad := p1cd - p2s (3)
+    p2s (0) -= p1ad
+end p1atk
+
+% P2 Attack
+procedure p2atk
+    % Calculate P2's calculated damage
+    p2cd := p2s (2) + p2as (p2ac)
+    put p2n, "(P2) used ", p2an (p2ac), " for ", p2cd, " damage!"
+    delay (4000)
+
+    % Calculate actual damage
+    p2ad := p1cd - p1s (3)
+    p1s (0) -= p2ad
+end p2atk
+
+% Title %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 put "Super Battle Arena"
 put "By Rafael Wiska-Ilnicki"
 put "Version ", ver
@@ -136,62 +160,25 @@ loop
 
     % If P1 is faster than P2 or if they are equal
     if p1s (4) > p2s (4) or p1s (4) = p2s (4) then
-
-        % P1's attack
-        % Calculate P1's calculated damage
-        p1cd := p1s (2) + p1as (p1ac)
-        put p1n, "(P1) used ", p1an (p1ac), " for ", p1cd, " damage!"
-        delay (4000)
-
-        % Calculate actual damage
-        p1ad := p1cd - p2s (3)
-        p2s (0) -= p1ad
+        p1atk
         exit when p2s (0) <= 0
-
-        % P2's attack
-        % Calculate P2's calculated damage
-        p2cd := p2s (2) + p2as (p2ac)
-        put p2n, "(P2) used ", p2an (p2ac), " for ", p2cd, " damage!"
-        delay (4000)
-
-        % Calculate actual damage
-        p2ad := p1cd - p1s (3)
-        p1s (0) -= p2ad
+        p2atk
         exit when p1s (0) <= 0
 
         % If P2 is faster than P1
     elsif p1s (4) < p2s (4) then
-
-        % P2's attack
-        % Calculate P2's calculated damage
-        p2cd := p2s (2) + p2as (p2ac)
-        put p2n, "(P2) used ", p2an (p2ac), " for ", p2cd, " damage!"
-        delay (4000)
-
-        % Calculate actual damage
-        p2ad := p1cd - p1s (3)
-        p1s (0) -= p2ad
+        p2atk
         exit when p1s (0) <= 0
-
-        % P1's attack
-        % Calculate P1's calculated damage
-        p1cd := p1s (2) + p1as (p1ac)
-        put p1n, "(P1) used ", p1an (p1ac), " for ", p1cd, " damage!"
-        delay (4000)
-
-        % Calculate actual damage
-        p1ad := p1cd - p2s (3)
-        p2s (0) -= p1ad
+        p1atk
         exit when p2s (0) <= 0
-
     end if
     cls
     exit when p1s (0) <= 0 or p2s (0) <= 0
 end loop
 
+% Winning message
 if p1s (0) > p2s (0) then
     put p1n, "(P1) won!"
 else
     put p2n, "(P2) won!"
 end if
-
