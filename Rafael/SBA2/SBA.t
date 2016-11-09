@@ -1,6 +1,9 @@
 % Super Battle Arena
 % Rafael Wiska-Ilnicki
 
+% Include files %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+include "cond"
+
 % Variables %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 var p1fc, p2fc : int % Player's fighter choice
 var p1fcs, p2fcs : string
@@ -33,8 +36,9 @@ var p2cd : int % P2 Calculated Damage
 procedure p1atk
     % Calculate P1's calculated damage
     p1cd := p1s (2) + p1as (p1ac)
-    put p1n, "(P1) used ", p1an (p1ac), " for ", p1cd, " damage!"
-    delay (4000)
+    put p1n, "(P1) used ", p1an (p1ac), " for ", p1cd, " damage!"..
+    getch (key)
+    put ""
 
     % Calculate actual damage
     p1ad := p1cd - p2s (3)
@@ -45,8 +49,9 @@ end p1atk
 procedure p2atk
     % Calculate P2's calculated damage
     p2cd := p2s (2) + p2as (p2ac)
-    put p2n, "(P2) used ", p2an (p2ac), " for ", p2cd, " damage!"
-    delay (4000)
+    put p2n, "(P2) used ", p2an (p2ac), " for ", p2cd, " damage!"..
+    getch (key)
+    put ""
 
     % Calculate actual damage
     p2ad := p2cd - p1s (3)
