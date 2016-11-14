@@ -1,40 +1,19 @@
 % Super Battle Arena
 % Rafael Wiska-Ilnicki
 
-% Variables %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-var p1fc, p2fc : int % Player's fighter choice
-var p1fcs, p2fcs : string
-var ver : string := "DEV ALPHA V1.2.5" % Version Number
-var sg : int % File reading var
-var key : string (1) % For any press any key to continue
-
-% P1 Vars
-var p1n : string % P1 Character name
-var p1s : array 0 .. 4 of int % P1 Stats
-var p1an : array 1 .. 4 of string % P1 Attack Names
-var p1as : array 1 .. 4 of int % P1 Attack stats
-var p1ac : int % P1 Attack choice
-var p1ad : int % P1 Actual Damage
-var p1df : int % P1 Defending
-var p1cd : int % P1 Calculated Damage
-
-% P2 Vars
-var p2n : string % P1 Character name
-var p2s : array 0 .. 4 of int % P2 Stats
-var p2an : array 1 .. 4 of string % P1 Attack Names
-var p2as : array 1 .. 4 of int % P1 Attack stats
-var p2ac : int % P2 Attack choice
-var p2ad : int % P2 Actual Damage
-var p2df : int % P2 Defending
-var p2cd : int % P2 Calculated Damage
+% Include files %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+include "vars.t"
+include "cond.t"
 
 % Procedures %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % P1 Attack
 procedure p1atk
     % Calculate P1's calculated damage
     p1cd := p1s (2) + p1as (p1ac)
-    put p1n, "(P1) used ", p1an (p1ac), " for ", p1cd, " damage!"
-    delay (4000)
+    p1cond
+    put p1n, "(P1) used ", p1an (p1ac), " for ", p1cd, " damage! "..
+    getch (key)
+    put ""
 
     % Calculate actual damage
     p1ad := p1cd - p2s (3)
@@ -45,8 +24,10 @@ end p1atk
 procedure p2atk
     % Calculate P2's calculated damage
     p2cd := p2s (2) + p2as (p2ac)
-    put p2n, "(P2) used ", p2an (p2ac), " for ", p2cd, " damage!"
-    delay (4000)
+    p2cond
+    put p2n, "(P2) used ", p2an (p2ac), " for ", p2cd, " damage! "..
+    getch (key)
+    put ""
 
     % Calculate actual damage
     p2ad := p2cd - p1s (3)
@@ -67,9 +48,10 @@ loop
     put "Swordman (TEST) [1]"
     put "Punchman (TEST) [2]"
     put "Magedude (TEST) [3]"
+    put "Healdude (TEST) [4]"
     put ">> " ..
     get p1fc
-    exit when p1fc >= 1 and p1fc <= 3
+    exit when p1fc >= 1 and p1fc <= 4
     put "ERROR! Invalid choice! Please choose from one of the options!"
 end loop
 
@@ -101,9 +83,10 @@ loop
     put "Swordman (TEST) [1]"
     put "Punchman (TEST) [2]"
     put "Magedude (TEST) [3]"
+    put "Healdude (TEST) [4]"
     put ">> " ..
     get p2fc
-    exit when p2fc >= 1 and p1fc <= 3
+    exit when p2fc >= 1 and p1fc <= 4
     put "ERROR! Invalid choice! Please choose from one of the options!"
 end loop
 
