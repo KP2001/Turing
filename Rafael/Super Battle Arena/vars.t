@@ -4,7 +4,7 @@
 % Main Variables
 var p1fc, p2fc : int % Player's fighter choice
 var p1fcs, p2fcs : string
-var ver : string := "DEV ALPHA V1.2.9 WIP" % Version Number
+var ver : string := "DEV ALPHA V1.3.0 WIP" % Version Number
 var sg : int % File reading var
 var key : string (1) % For any press any key to continue
 
