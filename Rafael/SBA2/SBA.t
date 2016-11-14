@@ -10,7 +10,8 @@ include "cond.t"
 procedure p1atk
     % Calculate P1's calculated damage
     p1cd := p1s (2) + p1as (p1ac)
-    put p1n, "(P1) used ", p1an (p1ac), " for ", p1cd, " damage!"..
+    p1cond
+    put p1n, "(P1) used ", p1an (p1ac), " for ", p1cd, " damage! "..
     getch (key)
     put ""
 
@@ -23,7 +24,8 @@ end p1atk
 procedure p2atk
     % Calculate P2's calculated damage
     p2cd := p2s (2) + p2as (p2ac)
-    put p2n, "(P2) used ", p2an (p2ac), " for ", p2cd, " damage!"..
+    p2cond
+    put p2n, "(P2) used ", p2an (p2ac), " for ", p2cd, " damage! "..
     getch (key)
     put ""
 
@@ -46,9 +48,10 @@ loop
     put "Swordman (TEST) [1]"
     put "Punchman (TEST) [2]"
     put "Magedude (TEST) [3]"
+    put "Healdude (TEST) [4]"
     put ">> " ..
     get p1fc
-    exit when p1fc >= 1 and p1fc <= 3
+    exit when p1fc >= 1 and p1fc <= 4
     put "ERROR! Invalid choice! Please choose from one of the options!"
 end loop
 
@@ -80,9 +83,10 @@ loop
     put "Swordman (TEST) [1]"
     put "Punchman (TEST) [2]"
     put "Magedude (TEST) [3]"
+    put "Healdude (TEST) [4]"
     put ">> " ..
     get p2fc
-    exit when p2fc >= 1 and p1fc <= 3
+    exit when p2fc >= 1 and p1fc <= 4
     put "ERROR! Invalid choice! Please choose from one of the options!"
 end loop
 
