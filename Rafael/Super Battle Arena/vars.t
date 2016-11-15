@@ -10,7 +10,10 @@ var key : string (1) % For any press any key to continue
 
 % P1 Vars
 var p1n : string % P1 Character name
-var p1s : array 0 .. 4 of int % P1 Stats
+
+% P1 Stats; 0: Current HP, 1: Base HP, 2: ATK, 3: DEF, 4: Speed
+var p1s : array 0 .. 4 of int 
+
 var p1an : array 1 .. 4 of string % P1 Attack Names
 var p1as : array 1 .. 4 of int % P1 Attack stats
 var p1ac : int % P1 Attack choice
@@ -20,7 +23,10 @@ var p1cd : int % P1 Calculated Damage
 
 % P2 Vars
 var p2n : string % P1 Character name
-var p2s : array 0 .. 4 of int % P2 Stats
+
+% P2 Stats; 0: Current HP, 1: Base HP, 2: ATK, 3: DEF, 4: Speed
+var p2s : array 0 .. 4 of int 
+
 var p2an : array 1 .. 4 of string % P1 Attack Names
 var p2as : array 1 .. 4 of int % P1 Attack stats
 var p2ac : int % P2 Attack choice
