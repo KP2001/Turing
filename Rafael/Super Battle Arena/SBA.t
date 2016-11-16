@@ -16,7 +16,7 @@ procedure p1atk
 
     % If the actual damage is below 0, it will set it to zero
     if p1ad < 0 then
-        p1ad := 0
+	p1ad := 0
     end if
 
     p2s (0) -= p1ad
@@ -37,7 +37,7 @@ procedure p2atk
 
     % If the actual damage is below 0, it will set it to zero
     if p2ad < 0 then
-        p2ad := 0
+	p2ad := 0
     end if
 
     p1s (0) -= p2ad
@@ -61,13 +61,19 @@ cls
 loop
     cls
     put "PLAYER 1: Choose your fighter!"
-    put "Swordman (TEST) [1]"
-    put "Punchman (TEST) [2]"
-    put "Magedude (TEST) [3]"
-    put "Healdude (TEST) [4]"
+
+    % Opens file of character names and displays them on the screen
+    open : sg, "chars.txt", get
+    for i : 1 .. chcomx
+	get : sg, chng : *
+	put chng, " [", i, "]"
+    end for
+    close : sg
+
+    % Asks for choice
     put ">> " ..
     get p1fc
-    exit when p1fc >= 1 and p1fc <= 4
+    exit when p1fc >= 1 and p1fc <= chcomx
     put "ERROR! Invalid choice! Please choose from one of the options!" ..
     getch (key)
 end loop
@@ -98,13 +104,19 @@ cls
 loop
     cls
     put "PLAYER 2: Choose your fighter!"
-    put "Swordman (TEST) [1]"
-    put "Punchman (TEST) [2]"
-    put "Magedude (TEST) [3]"
-    put "Healdude (TEST) [4]"
+
+    % Opens file of character names and displays them on the screen
+    open : sg, "chars.txt", get
+    for i : 1 .. chcomx
+	get : sg, chng : *
+	put chng, " [", i, "]"
+    end for
+    close : sg
+
+    % Asks for choice
     put ">> " ..
     get p2fc
-    exit when p2fc >= 1 and p1fc <= 4
+    exit when p2fc >= 1 and p2fc <= chcomx
     put "ERROR! Invalid choice! Please choose from one of the options!" ..
     getch (key)
 end loop
@@ -137,51 +149,51 @@ loop
     put p2n : 15, " (P2)  HP: ", p2s (0) : 3, "/", p2s (1)
 
     loop
-        % Get P1's attack
-        put p1n, "(P1), choose your attack"
-        put "[1] ", p1an (1)
-        put "[2] ", p1an (2)
-        put "[3] ", p1an (3)
-        put "[4] ", p1an (4)
-        get p1ac
-        exit when p1ac >= 1 and p1ac <= 4
-        put "Error! Invalid attack choice!"
+	% Get P1's attack
+	put p1n, " (P1), choose your attack"
+	put "[1] ", p1an (1)
+	put "[2] ", p1an (2)
+	put "[3] ", p1an (3)
+	put "[4] ", p1an (4)
+	get p1ac
+	exit when p1ac >= 1 and p1ac <= 4
+	put "Error! Invalid attack choice!"
     end loop
 
     loop
-        % Get P2's attack
-        put p2n, "(P2), choose your attack"
-        put "[1] ", p2an (1)
-        put "[2] ", p2an (2)
-        put "[3] ", p2an (3)
-        put "[4] ", p2an (4)
-        get p2ac
-        exit when p2ac >= 1 and p2ac <= 4
-        put "Error! Invalid attack choice!"
+	% Get P2's attack
+	put p2n, " (P2), choose your attack"
+	put "[1] ", p2an (1)
+	put "[2] ", p2an (2)
+	put "[3] ", p2an (3)
+	put "[4] ", p2an (4)
+	get p2ac
+	exit when p2ac >= 1 and p2ac <= 4
+	put "Error! Invalid attack choice!"
     end loop
 
     % If P1 is faster than P2 or if they are equal
     if p1s (4) > p2s (4) or p1s (4) = p2s (4) then
-        p1atk
-        exit when p2s (0) <= 0
-        p2atk
-        exit when p1s (0) <= 0
+	p1atk
+	exit when p2s (0) <= 0
+	p2atk
+	exit when p1s (0) <= 0
 
-        % If P2 is faster than P1
+	% If P2 is faster than P1
     elsif p1s (4) < p2s (4) then
-        p2atk
-        exit when p1s (0) <= 0
-        p1atk
-        exit when p2s (0) <= 0
+	p2atk
+	exit when p1s (0) <= 0
+	p1atk
+	exit when p2s (0) <= 0
     end if
     cls
     exit when p1s (0) <= 0 or p2s (0) <= 0
 
     % Ensures that HP doesn't go over base
     if p1s (0) > p1s (1) then
-        p1s (0) := p1s (1)
+	p1s (0) := p1s (1)
     elsif p2s (0) > p2s (1) then
-        p2s (0) := p2s (1)
+	p2s (0) := p2s (1)
     end if
 end loop
 

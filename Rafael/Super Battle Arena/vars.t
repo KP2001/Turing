@@ -3,10 +3,12 @@
 
 % Main Variables
 var p1fc, p2fc : int % Player's fighter choice
-var p1fcs, p2fcs : string
+var p1fcs, p2fcs : string % Player's fighter choice (string for opening file)
 var ver : string := "DEV ALPHA V1.3.0 WIP" % Version Number
 var sg : int % File reading var
 var key : string (1) % For any press any key to continue
+var chng : string % For getting character names from file
+var chcomx : int := 4 % Character count max
 
 % P1 Vars
 var p1n : string % P1 Character name
