@@ -20,7 +20,7 @@ procedure p1cond
             end if
 
             p2s (0) -= p1ad
-            put p1n, "(P1) used ", p1an (p1ac), " for ", p1ad, " damage! "..
+            put p1n, "(P1) used ", p1an (p1ac), " for ", p1ad, " damage!"..
             getch (key)
             put ""
         end for
@@ -30,7 +30,7 @@ procedure p1cond
     elsif p1fc = 4 and p1ac = 3 then
         p2s (0) += p1ad
         p1ad := 0
-        put p1n, " (P1) healed for 100HP!"
+        put p1n, " (P1) healed for 100HP!"..
         if p1s (0) > p1s (1) - 100 then
             p1s (0) := p1s (1)
         else
@@ -38,7 +38,7 @@ procedure p1cond
         end if
     else
         % Otherwise, a standard message is displayed
-        put p1n, "(P1) used ", p1an (p1ac), " for ", p1ad, " damage! " ..
+        put p1n, "(P1) used ", p1an (p1ac), " for ", p1ad, " damage!" ..
     end if
 end p1cond
 
@@ -59,7 +59,7 @@ procedure p2cond
             end if
 
             p1s (0) -= p2ad
-            put p2n, "(P2) used ", p2an (p2ac), " for ", p2ad, " damage! " ..
+            put p2n, "(P2) used ", p2an (p2ac), " for ", p2ad, " damage!" ..
             getch (key)
             put ""
         end for
@@ -69,7 +69,7 @@ procedure p2cond
     elsif p2fc = 4 and p2ac = 3 then
         p1s (0) += p2ad
         p2ad := 0
-        put p2n, " (P2) healed for 100HP!"
+        put p2n, " (P2) healed for 100HP!"..
         if p2s (0) > p2s (1) - 100 then
             p2s (0) := p2s (1)
         else
@@ -77,6 +77,6 @@ procedure p2cond
         end if
     else
         % Otherwise, a standard message is displayed
-        put p2n, "(P2) used ", p2an (p2ac), " for ", p2ad, " damage! " ..
+        put p2n, "(P2) used ", p2an (p2ac), " for ", p2ad, " damage!" ..
     end if
 end p2cond
