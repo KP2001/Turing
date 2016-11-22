@@ -8,6 +8,6 @@ Bandaid Barrage
 Heal
 Infect
 40
-40
+0
 0
 80

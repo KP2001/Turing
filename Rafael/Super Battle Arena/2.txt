@@ -4,10 +4,10 @@ Punchman
 100
 200
 Fist of Fury
-Karate Chop
 Helichopter
+Karate Chop
 The Finisher
 50
-50
 70
+50
 90
