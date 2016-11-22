@@ -9,19 +9,25 @@ include "cond.t"
 % P1 Attack
 procedure p1atk
     % Calculate P1's calculated damage
-    p1cd := p1s (2) + p1as (p1ac)
+    randint (p1ch, 1, 20)
+    if p1ch > 1 then
+	p1cd := p1s (2) + p1as (p1ac)
 
-    % Calculate actual damage
-    p1ad := p1cd - p2s (3)
+	% Calculate actual damage
+	p1ad := p1cd - p2s (3)
 
-    % If the actual damage is below 0, it will set it to zero
-    if p1ad < 0 then
-        p1ad := 0
+	% If the actual damage is below 0, it will set it to zero
+	if p1ad < 0 then
+	    p1ad := 0
+	end if
+
+	p2s (0) -= p1ad
+
+	p1cond
+    else
+	put p1n, " (P1) tried to use ", p1an (p1ac), " but missed!"..
     end if
 
-    p2s (0) -= p1ad
-
-    p1cond
     getch (key)
     put ""
 
@@ -30,22 +36,27 @@ end p1atk
 % P2 Attack
 procedure p2atk
     % Calculate P2's calculated damage
-    p2cd := p2s (2) + p2as (p2ac)
+    randint (p2ch, 1, 20)
+    if p2ch > 1 then
+	p2cd := p2s (2) + p2as (p2ac)
 
-    % Calculate actual damage
-    p2ad := p2cd - p1s (3)
+	% Calculate actual damage
+	p2ad := p2cd - p1s (3)
 
-    % If the actual damage is below 0, it will set it to zero
-    if p2ad < 0 then
-        p2ad := 0
+	% If the actual damage is below 0, it will set it to zero
+	if p2ad < 0 then
+	    p2ad := 0
+	end if
+
+	p1s (0) -= p2ad
+
+	p2cond
+    else
+	put p2n, " (P2) tried to use ", p2an (p2ac), " but missed!"..
     end if
 
-    p1s (0) -= p2ad
-
-    p2cond
     getch (key)
     put ""
-
 
 end p2atk
 
@@ -65,8 +76,8 @@ loop
     % Opens file of character names and displays them on the screen
     open : sg, "chars.txt", get
     for i : 1 .. chcomx
-        get : sg, chng : *
-        put chng, " [", i, "]"
+	get : sg, chng : *
+	put chng, " [", i, "]"
     end for
     close : sg
 
@@ -108,8 +119,8 @@ loop
     % Opens file of character names and displays them on the screen
     open : sg, "chars.txt", get
     for i : 1 .. chcomx
-        get : sg, chng : *
-        put chng, " [", i, "]"
+	get : sg, chng : *
+	put chng, " [", i, "]"
     end for
     close : sg
 
@@ -149,49 +160,49 @@ loop
     put p2n : 15, " (P2)  HP: ", p2s (0) : 3, "/", p2s (1)
 
     loop
-        % Get P1's attack
-        put p1n, " (P1), choose your attack"
-        for i : 1 .. 4
-            put "[", i, "] ", p1an (i)
-        end for
-        get p1ac
-        exit when p1ac >= 1 and p1ac <= 4
-        put "Error! Invalid attack choice!"
+	% Get P1's attack
+	put p1n, " (P1), choose your attack"
+	for i : 1 .. 4
+	    put "[", i, "] ", p1an (i)
+	end for
+	get p1ac
+	exit when p1ac >= 1 and p1ac <= 4
+	put "Error! Invalid attack choice!"
     end loop
 
     loop
-        % Get P2's attack
-        put p2n, " (P2), choose your attack"
-        for i : 1 .. 4
-            put "[", i, "] ", p2an (i)
-        end for
-        get p2ac
-        exit when p2ac >= 1 and p2ac <= 4
-        put "Error! Invalid attack choice!"
+	% Get P2's attack
+	put p2n, " (P2), choose your attack"
+	for i : 1 .. 4
+	    put "[", i, "] ", p2an (i)
+	end for
+	get p2ac
+	exit when p2ac >= 1 and p2ac <= 4
+	put "Error! Invalid attack choice!"
     end loop
 
     % If P1 is faster than P2 or if they are equal
     if p1s (4) > p2s (4) or p1s (4) = p2s (4) then
-        p1atk
-        exit when p2s (0) <= 0
-        p2atk
-        exit when p1s (0) <= 0
+	p1atk
+	exit when p2s (0) <= 0
+	p2atk
+	exit when p1s (0) <= 0
 
-        % If P2 is faster than P1
+	% If P2 is faster than P1
     elsif p1s (4) < p2s (4) then
-        p2atk
-        exit when p1s (0) <= 0
-        p1atk
-        exit when p2s (0) <= 0
+	p2atk
+	exit when p1s (0) <= 0
+	p1atk
+	exit when p2s (0) <= 0
     end if
     cls
     exit when p1s (0) <= 0 or p2s (0) <= 0
 
     % Ensures that HP doesn't go over base
     if p1s (0) > p1s (1) then
-        p1s (0) := p1s (1)
+	p1s (0) := p1s (1)
     elsif p2s (0) > p2s (1) then
-        p2s (0) := p2s (1)
+	p2s (0) := p2s (1)
     end if
 end loop
 
@@ -201,3 +212,4 @@ if p1s (0) > p2s (0) then
 else
     put p2n, "(P2) won!"
 end if
+

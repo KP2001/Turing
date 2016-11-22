@@ -22,6 +22,7 @@ var p1ad : int % P1 Actual Damage
 var p1df : int % P1 Defending
 var p1cd : int % P1 Calculated Damage
 var p1bc : int := 0 % P1 Boost Counter
+var p1ch : int % P1 Chance
 
 % P2 Vars %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % P2 Stats; 0: Current HP, 1: Base HP, 2: ATK, 3: DEF, 4: Speed
@@ -34,3 +35,4 @@ var p2ad : int % P2 Actual Damage
 var p2df : int % P2 Defending
 var p2cd : int % P2 Calculated Damage
 var p2bc : int := 0 % P2 Boost Counter
+var p2ch : int % P2 Chance
