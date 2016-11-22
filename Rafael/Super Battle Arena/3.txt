@@ -4,10 +4,10 @@ Magedude
 250
 150
 Fireball
-Zap
 Energy Blast
+Zap
 Spirit Awakening
 50
-40
 70
+40
 90
