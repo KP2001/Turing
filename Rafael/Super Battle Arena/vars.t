@@ -8,7 +8,7 @@ var ver : string := "DEV ALPHA V1.3.0 WIP" % Version Number
 var sg : int % File reading var
 var key : string (1) % For any press any key to continue
 var chng : string % For getting character names from file
-var chcomx : int := 4 % Character count max
+var chcomx : int % Character count max
 var bstmax : int := 3 % Maximum number of times boost can be done
 
 % P1 Vars %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
