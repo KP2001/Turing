@@ -1,0 +1,13 @@
+Healdude
+4200
+210
+230
+140
+Needle Throw
+Bandaid Barrage
+Heal
+Infect
+40
+0
+0
+80

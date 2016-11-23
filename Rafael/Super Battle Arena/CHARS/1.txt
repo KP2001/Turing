@@ -1,0 +1,13 @@
+Swordman
+5000
+250
+250
+100
+Sword Slash
+Sky Uppercut
+Jab
+Dragon Slash
+50
+70
+30
+90

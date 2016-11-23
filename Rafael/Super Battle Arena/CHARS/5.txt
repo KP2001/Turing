@@ -1,0 +1,13 @@
+Flaair
+2433
+301
+255
+255
+Flame Burst
+Ember
+Flamethrower
+Rain of Ashes
+50
+30
+60
+80

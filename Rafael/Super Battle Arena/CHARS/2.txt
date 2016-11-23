@@ -1,0 +1,13 @@
+Punchman
+4000
+300
+100
+200
+Fist of Fury
+Helichopter
+Karate Chop
+The Finisher
+50
+70
+50
+90
