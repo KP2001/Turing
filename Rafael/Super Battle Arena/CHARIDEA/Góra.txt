@@ -1,19 +1,17 @@
-Góra
-    3540
-    219
-    368
-    198
+﻿Góra
+3540
+219
+368
+198
 Club Bash
 Shield of Patriarch
 Góran Rush
 Earth Trembler
-    20
-    34
-    50
-    67
-    
-    Góra is a defensive-type character, he has high health and high defense to balance out his low attack and slow speed.
-    He own a shield called the "Patriarch", in which if he uses it during battle, reduces attacks from 20%-45% for 1 turn with
-      a 2 turn cooldown. He also can preform the Góran Rush, which increases his attack and speed at the cost of his defense, dealing 20%
-      more damage
-    His Earth Trembler attack is an average attack, don't do anything
+20
+34
+50
+67
+Góra is a defensive-type character, he has high health and high defense to balance out his low attack and slow speed.
+He own a shield called the "Patriarch", in which if he uses it during battle, reduces attacks from 20%-45% for 1 turn with
+a 2 turn cooldown. He also can preform the Góran Rush, which increases his attack and speed at the cost of his defense, dealing 20%
+more damage. His Earth Trembler attack is an average attack, don't do anything
