@@ -1,0 +1,13 @@
+Kaniker
+4000
+318
+150
+340
+Plane Inspection
+Propeller Spin
+Bomb Dive
+"Gift From Above"
+20
+50
+59
+100
