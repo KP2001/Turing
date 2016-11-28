@@ -1,0 +1,57 @@
+Super Battle Arena Character Database
+
+01. Sir Dowman, Noble Knight
+	HP: 5000 ATK: 250 DEF: 250 SPD: 100 Total: 5600
+ 	Sword Slash     	50/300
+	Sky Uppercut    	70/320
+	Jab             	30/270
+	Dragon Slash    	90/340
+
+02. Master Ken, Chain Belt 
+	HP: 4000 ATK: 300 DEF: 100 SPD: 250 Total: 4650
+	Fist of Fury		50/350
+	Helichopter		70/370
+	Karate Chop		50/350
+	The Finisher		90/390
+
+03. Magedude, Wizard of the Alvars
+	HP: 4100 ATK: 270 DEF: 250 SPD: 150 Total: 4770
+	Fireball		50/320
+	Energy Blast		70/340
+	Zap			40/310
+	Spirit Awakening	90/360
+
+04. Dr. Subaar, MD
+	HP: 4200 ATK: 210 DEF: 230 SPD: 140 Total: 4780
+	Needle Throw		40/250
+	Bandaid Barrage		40-70/250-280
+	Heal			0/0
+	Infect			80/290
+
+05. Flaair
+	HP: 2433 ATK: 301 DEF: 255 SPD: 255 Total: 3244
+	Flame Burst		50/351
+	Ember			30/331
+	Flamethrower		60/361
+	Rain of Ashes		80/381
+
+06. Góra
+	HP: 3540 ATK: 219 DEF: 368 SPD: 198 Total: 4325
+	Club Bash		20/239
+	Shield of Patriarch	34/253
+	Góran Rush		50/269
+	Earth Trembler		67/286
+
+07. Deigar
+	HP: 4088 ATK: 268 DEF: 199 SPD: 312 Total: 4867
+	Theft			45/313
+	Crimson Blade		59/327
+	Pickpocket Dash		69/337
+	Daggar of the Theives	83/351
+
+08. Kaniker, Expert Pilot
+	HP: 4000 ATK: 318 DEF: 150 SPD: 340 Total: 4808
+	Plane Inspection	20/338
+	Propeller Spin		50/368
+	Bomb Dive		59/377
+	"Gift From Above"	100/418
