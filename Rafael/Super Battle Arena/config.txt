@@ -1,1 +1,2 @@
-8
+max_num_chars=8
+version=Dev Alpha 1.4.0WIP
