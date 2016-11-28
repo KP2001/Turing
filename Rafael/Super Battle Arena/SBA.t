@@ -80,7 +80,7 @@ loop
     % Opens file of character names and displays them on the screen
     open : sg, "CHARS/chars.txt", get
     for i : 1 .. chcomx
-	get : sg, chng
+	get : sg, chng : *
 	put chng, " [", i, "]"
     end for
     close : sg
@@ -123,7 +123,7 @@ loop
     % Opens file of character names and displays them on the screen
     open : sg, "CHARS/chars.txt", get
     for i : 1 .. chcomx
-	get : sg, chng
+	get : sg, chng : *
 	put chng, " [", i, "]"
     end for
     close : sg
