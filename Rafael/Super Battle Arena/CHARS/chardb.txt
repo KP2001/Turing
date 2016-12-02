@@ -35,11 +35,11 @@ Super Battle Arena Character Database
 	Flamethrower		60/361
 	Rain of Ashes		80/381
 
-06. Góra
+06. GÃ³ra
 	HP: 3540 ATK: 219 DEF: 368 SPD: 198 Total: 4325
 	Club Bash		20/239
 	Shield of Patriarch	34/253
-	Góran Rush		50/269
+	GÃ³ran Rush		50/269
 	Earth Trembler		67/286
 
 07. Deigar
@@ -55,3 +55,10 @@ Super Battle Arena Character Database
 	Propeller Spin		50/368
 	Bomb Dive		59/377
 	"Gift From Above"	100/418
+	
+09. Ob, Spoon Warrior
+	HP : 3745 ATK: 244 DEF: 244 SPD: 244 Total: 4477
+	Spoon Shot		45/289
+	Scoop			60/304
+	10 Meter Spoon March	50/294
+	Spoon Snipe		80/324
