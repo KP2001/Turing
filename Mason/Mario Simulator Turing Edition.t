@@ -11,8 +11,8 @@ var mo : int := Pic.FileNew ("mo.jpg")
 var sfm : int := 1
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%% Text colouring %%%%%%%%%%
-colour (white)
-colourback (red)
+colour (black)
+colourback (gray)
 cls
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 if mo = 0 then
@@ -30,7 +30,7 @@ end if
 put "Mario Simulator Turing Edition Alpha"
 put "By Sonason"
 put ""
-put "Version Alpha 5.1"
+put "Version Alpha 6"
 put "Type [B] to start your adventure!"
 put "Type [M] for menu"
 put ""
@@ -126,7 +126,11 @@ if start = "2" then
     put "October 2, 2015"
     colour (white)
     put "WHO DUNNIT? Mutiny is aboard!(Alpha 6)"
-    colour (42)
+      colour (42)
+    put "February 2, 2017"
+    colour (white)
+    put "NEW MSTE UPDATE WOOT!"
+    put "...but it's mostly improvements to the game. Expect a proper update in the future.(Alpha 6.1)
     put "[B] to start game"
     put ""
     get start
@@ -138,18 +142,16 @@ loop
 
     if start = "B" or start = "b" then
         cls
-        color (white)
         put ""
         put "Hello and welcome to Mario Simulator: Turing Edition!"
         put "You will start by noticing options to follow."
         put "Type the number in to go to that option."
-        put "Let's a go! [0]"
+        put "Let's-a go! [0]"
         get input
-    end if
-
+        end if
+ 
     if input = 0 then
         cls
-        put ""
         put "Our story starts with the princess once again being kidnapped by Bowser."
         put "What will Mario do now?"
         delay (999)
@@ -161,32 +163,35 @@ loop
         delay (999)
         put "Get that mofo!(6)"
         get input
-    else
-    end if
+        else
+        end if
 
     if input = 1 then
-        put ""
+        cls
+        color (red)
         put "Mario:"
         put "Hey, stinky!"
         delay (500)
+        color (black)
         put "'Explosion sound'"
         delay (1500)
         colour (12)
         put "GAME OVER, YEAH!"
         delay (500)
-        color (white)
         put "What the heck!?"
         delay (5000)
         sfm := 2
         delay (100)
         sfm := 1
         cls
-    else
-    end if
+        else
+        end if
 
     if input = 2 then
-        put ""
+        cls
+        color (red)
         put "Mario: 'Eating noises'"
+        color (black)
         put "Seriously!?"
         delay (999)
         put "You're eating that stuff of all times NOW?"
@@ -195,11 +200,12 @@ loop
         delay (999)
         put "Fine! Save the princess (6)"
         get input
-    else
-    end if
+        else
+        end if
 
     if input = 3 then
-        put ""
+        cls
+        color (red)
         put "Mario: 'Eating noises'"
         delay (999)
         put "Okay, I can wait for you to finish eating."
@@ -210,21 +216,23 @@ loop
         delay (999)
         put "Fine! Save the princess (6)"
         get input
-    else
-    end if
+        else
+        end if
 
     if input = 4 then
-        put ""
-        color (white)
+        cls
+        color (red)
         put "Mario: 'Eating noises'"
         delay (999)
         put "Seriously, how much longer do you have to eat!?"
         delay (999)
+        color (red)
         put "Mario:"
         put "Hey, I'm hungry!"
         delay (999)
         put "Well, maybe this will make you hurry up!"
         delay (2000)
+        color (red)
         put "Mario:"
         put "Wait, where'd that bomb-"
         delay (500)
@@ -237,16 +245,17 @@ loop
         delay (100)
         sfm := 1
         cls
-    else
-    end if
+        else
+        end if
 
     if input = 5 then
-        put ""
+        cls
         put "Phone: 'Rings'"
         delay (999)
         put "Toad:(on phone)"
         put "Oh, hey Mario!"
         delay (999)
+        color (red)
         put "Mario:"
         put "Yes, yes..."
         put "Is this where I can hire a princess?"
@@ -254,11 +263,13 @@ loop
         put "Toad:"
         put "Take a look!"
         delay (2000)
+        color (red)
         put "Mario:"
         put "NO!"
         delay (999)
         put "'Phone hangs up'"
         delay (999)
+        color (red)
         put "Mario:"
         put "I'm out! I'm gonna grab some food!"
         delay (1500)
@@ -270,22 +281,25 @@ loop
         delay (100)
         sfm := 1
         cls
-    else
-    end if
+        else
+        end if
 
     if input = 6 then
-        put ""
+        cls
+        color (red)
         put "Mario:"
         put "This is gonna be one of those days, isn't it?"
         delay (999)
         put "'Cue unexciting chase sequence'"
         delay (5000)
+        color (red)
         put "Mario:"
         put "'pant' 'pant' 'gasp'"
         put "I'm tired!"
         delay (999)
         put "Well, looks like someone hasn't been exercising lately."
         delay (999)
+        color (red)
         put "Mario:"
         put "Hey!"
         delay (500)
@@ -300,24 +314,25 @@ loop
         delay (999)
         put "Yoshi(15)"
         get input
-    else
-    end if
+        else
+        end if
 
     if input = 7 then
-        put ""
+        cls
         put "'Warp Pipe sound'"
         delay (999)
         put "Bob-omb: Welcome to my shop!"
         delay (999)
+        color (red)
         put "Mario:"
         put "Hmmm..."
         delay (1500)
-        put "Mario:"
         put "Hey, how much are these bombs?"
         delay (999)
         put "Bob-omb:"
         put "You want bombs!? I'LL GIVE YOU BOMBS!"
         delay (999)
+        color (red)
         put "Mario:"
         put "Woah! AUGH!"
         delay (250)
@@ -330,17 +345,19 @@ loop
         delay (100)
         sfm := 1
         cls
-    else
-    end if
+        else
+        end if
 
     if input = 8 then
-        put ""
+        cls
+        color (red)
         put "Mario:"
         put "AW YEAH! KART TIME!"
         put "'start uninspired car chase'"
         delay (3000)
         put "'police sirens'"
         delay (999)
+        color (red)
         put "Mario:"
         put "Dammit!"
         delay (500)
@@ -351,29 +368,32 @@ loop
         delay (999)
         put "Wait for the cops(10)"
         get input
-    else
-    end if
+        else
+        end if
 
     if input = 9 then
-        put ""
+        cls
+        color (red)
         put "Mario:"
         put "SUPER MARIO-"
         put "'fire sound'"
         delay (1200)
         put "'put tree burning sound fx here'"
         delay (500)
+        color (red)
         put "Mario:"
         put "Now I'm out of tricks."
         delay (999)
         put "Please type '10' to continue."
         get input
-    else
-    end if
+        else
+        end if
 
     if input = 10 then
-        put ""
+        cls
         put "The police officer comes up to Mario's car where-"
         delay (999)
+        color (red)
         put "Mario:"
         put "Do you really have to narrate my situation?"
         delay (999)
@@ -381,12 +401,14 @@ loop
         put "Hey! You were speeding back there,"
         put "so I'm gonna have to take you to the station."
         delay (999)
+        color (red)
         put "Mario:"
         put "Or else what?"
         delay (999)
         put "Officer:(loaning his gun)"
         put "We could send you to prison..."
         delay (999)
+        color (red)
         put "Mario:"
         put "Augh!"
         delay (999)
@@ -394,31 +416,30 @@ loop
         delay (999)
         put "Get outta here!(12)"
         get input
-    else
-    end if
+        else
+        end if
 
 
     if input = 11 then
-        put ""
+        cls
+        color (red)
         put "Mario:"
         put "Look officer..."
         delay (999)
-        put "Mario:"
         put "Is there..."
-        delay (500)
-        put "(:0"
         delay (500)
         put "...'anything' I can do to get out of this?"
         delay (999)
         put "Officer:"
         put "AUGGGH!"
         delay (999)
+        color (red)
         put "Mario:"
         put "Great! Prison! Thanks, guys!"
         delay (1500)
         colour (12)
         put "GAME OVER, YEA-"
-        color (white)
+        color (red)
         put "Mario:"
         put "Ah, SHADDAP!"
         delay (5000)
@@ -426,11 +447,12 @@ loop
         delay (100)
         sfm := 1
         cls
-    else
-    end if
+        else
+        end if
 
     if input = 12 then
-        put ""
+        cls
+        color (red)
         put "Mario:"
         put "Sorry officer, I'm outta here!"
         delay (999)
@@ -439,6 +461,7 @@ loop
         delay (500)
         put "'cue much more exciting chase scene'"
         delay (2000)
+        color (red)
         put "Mario:"
         put "Haha! They'll never get me!"
         delay (999)
@@ -449,14 +472,15 @@ loop
         delay (999)
         put "Nope.(14)"
         get input
-    else
-    end if
+        else
+        end if
 
     if input = 13 then
-        put ""
+        cls
         put "Player:"
         put "Hey! Look out!"
         delay (999)
+        color (red)
         put "Mario:"
         put "Huh? WAH!"
         delay (500)
@@ -465,15 +489,15 @@ loop
         put "Officer:"
         put "Stahp right dere!"
         delay (999)
+        color (red)
         put "Mario:"
         put "Oh COME ON!"
         delay (1500)
-        put "Mario:"
         put "Great! Prison! Thanks, guys!"
         delay (1500)
         colour (12)
         put "GAME OVER, YEA-"
-        color (white)
+        color (red)
         put "Mario:"
         put "Ah, SHADDAP!"
         delay (5000)
@@ -481,12 +505,14 @@ loop
         delay (100)
         sfm := 1
         cls
-    else
-    end if
+        else
+        end if
 
     if input = 14 then
-        put ""
+        cls
         put "Bam!"
+        delay (250)
+        color (red)
         put "Mario:"
         put "AUGH!"
         delay (500)
@@ -501,11 +527,12 @@ loop
         delay (999)
         put "Please press '17' to continue."
         get input
-    else
-    end if
+        else
+        end if
 
     if input = 15 then
-        put ""
+        cls
+        color (red)
         put "Mario:"
         put "Alright Yoshi! We're on another journey!"
         delay (1200)
@@ -514,6 +541,7 @@ loop
         delay (5000)
         put "1 hour later..."
         delay (500)
+        color (red)
         put "Mario:"
         put "Hurry up already!"
         delay (999)
@@ -525,34 +553,35 @@ loop
         delay (999)
         put "Use Curry!(16)"
         get input
-    else
-    end if
+        else
+        end if
 
 
     if input = 16 then
-        put ""
+        cls
+        color (red)
         put "Mario:"
         put "Hey Yoshi! Have this!"
         delay (999)
         put "Yoshi:"
         put "?"
         delay (999)
-        put "Yoshi:"
         put "AUGH! HOT! HOT!"
         delay (999)
+        color (red)
         put "Mario:"
         put "Oof!"
         delay (500)
-        put "Mario:"
         put "Well, looks like I'm on foot from here..."
         delay (999)
         put "Please press '17' to continue."
         get input
-    else
-    end if
+        else
+        end if
 
     if input = 17 then
-        put ""
+        cls
+        color (red)
         put "Mario:"
         put "Well, how coincidental: a town in the middle of nowhere!"
         delay (1500)
@@ -560,6 +589,7 @@ loop
         put "Oh god! Please help me!"
         put "My poor cat is up there!"
         delay (999)
+        color (red)
         put "Mario:"
         put "Jeez, I'm torn: I know I have to save Peach..."
         delay (999)
@@ -571,12 +601,13 @@ loop
         delay (999)
         put "Help the old lady!(19)"
         get input
-    else
-    end if
+        else
+        end if
 
 
     if input = 18 then
-        put ""
+        cls
+        color (red)
         put "Mario:"
         put "I'm really sorry ma'am! I've got a princess to rescue!"
         delay (2000)
@@ -588,12 +619,13 @@ loop
         delay (999)
         put "Throw stuff at it!(21)"
         get input
-    else
-    end if
+        else
+        end if
 
 
     if input = 19 then
-        put ""
+        cls
+        color (red)
         put "Mario:"
         put "I can spare a few minutes..."
         delay (5000)
@@ -603,6 +635,7 @@ loop
         delay (2000)
         put "You got a stick and 5 coins!"
         delay (999)
+        color (red)
         put "Mario:"
         put "Eep! A Chain Chomp!"
         delay (999)
@@ -615,18 +648,19 @@ loop
         delay (999)
         put "Use the stick!(22)"
         get input
-    else
-    end if
+        else
+        end if
 
     if input = 20 then
-        put ""
+        cls
+        color (red)
         put "Mario:"
         put "SAFETY DANCE TIME!"
         delay (500)
         put "'put music that fits with scenario here'"
         delay (2000)
         put "Mario is now safe from everything!"
-        delay (999)
+        delay (3000)
         put "...except for Chain Chomps."
         delay (1500)
         colour (12)
@@ -636,12 +670,13 @@ loop
         delay (100)
         sfm := 1
         cls
-    else
-    end if
+        else
+        end if
 
 
     if input = 21 then
-        put ""
+        cls
+        color (red)
         put "Mario:"
         put "Stay back you! I'm armed!"
         delay (500)
@@ -663,18 +698,20 @@ loop
         delay (100)
         sfm := 1
         cls
-    else
-    end if
+        else
+        end if
 
 
     if input = 22 then
-        put ""
+        cls
+        color (red)
         put "Mario:"
         put "Oh yeah! The stick!"
         delay (1000)
         put "Chompy:"
         put "?"
         delay (2000)
+        color (red)
         put "Mario:"
         put "Yeah! You want it?"
         delay (500)
@@ -683,9 +720,10 @@ loop
         put "Oof! Aaah!"
         delay (500)
         put "'Warp Pipe sound'"
-        delay (500)
+        delay (1000)
         put "'Warp Pipe sound'"
         delay (500)
+        color (red)
         put "Mario:"
         put "Oof!"
         delay (500)
@@ -697,30 +735,33 @@ loop
         delay (999)
         put "Ignore him(25)"
         get input
-    else
-    end if
+        else
+        end if
 
     if input = 23 then
-        put ""
+        cls
+        color (red)
         put "Mario:"
         put "Excuse me, do you have any spaghetti?"
         delay (999)
         put "Toad Guide:"
-        put "If you mean a fistfight, you got it!"
+        put "If by spaghetti you mean a fight, you got it!"
         delay (999)
+        color (red)
         put "Mario:"
         put "No! I asked if you have any spaghetti."
         delay (999)
         put "Toad Guide:"
         put "You asked for it!"
         delay (999)
+        color (red)
         put "Mario:"
         put "BWAAAAAAH!!!"
         delay (999)
         put "Technical difficulties, please stand by..."
         delay (5000)
         put "Toad Guide:"
-        put "There you go, you got it!"
+        put "Thank you, come again!"
         delay (1500)
         colour (12)
         put "GAME OVER, YEAH!"
@@ -729,11 +770,12 @@ loop
         delay (100)
         sfm := 1
         cls
-    else
-    end if
+        else
+        end if
 
     if input = 24 then
-        put ""
+        cls
+        color (red)
         put "Mario:"
         put "Excuse me, do you have directions to Bowser's castle?"
         delay (999)
@@ -745,11 +787,12 @@ loop
         delay (999)
         put "Please type '26' to continue."
         get input
-    else
-    end if
+        else
+        end if
 
     if input = 25 then
-        put ""
+        cls
+        color (red)
         put "Mario:"
         put "I'll bet he doesn't know the way."
         delay (999)
@@ -757,17 +800,19 @@ loop
         delay (999)
         put "Please type '26' to continue."
         get input
-    else
-    end if
+        else
+        end if
 
     if input = 26 then
-        put ""
+        cls
+        color (red)
         put "Mario:"
         put "Excuse me sir, do you know how to get to Bowser's castle?"
         delay (999)
         put "Salesman:"
         put "Why yes! How about this map for 5 coins?"
         delay (999)
+        color (red)
         put "Mario:"
         put "Yeah! Deal!"
         delay (2000)
@@ -781,26 +826,27 @@ loop
         delay (999)
         put "Port Toadstool(29)"
         get input
-    else
-    end if
+        else
+        end if
 
     if input = 27 then
-        put ""
+        cls
         put "Sorry, but this path is unaccusable!"
         delay (999)
         put "Hey! Get out of the story, talking octopi!"
-        delay (999)
+        delay (2000)
         put "He's right though. The shop is closed."
         delay (999)
         put "Mario's home(28)"
         delay (999)
         put "Port Toadstool(29)"
         get input
-    else
-    end if
+        else
+        end if
 
     if input = 28 then
-        put ""
+        cls
+        color (red)
         put "Mario:"
         put "Ah, home sweet home!"
         delay (999)
@@ -811,6 +857,7 @@ loop
         put "Luigi:"
         put "Hey Mario!"
         delay (999)
+        color (red)
         put "Mario:"
         put "What. The."
         delay (1500)
@@ -823,11 +870,12 @@ loop
         delay (100)
         sfm := 1
         cls
-    else
-    end if
+        else
+        end if
 
     if input = 29 then
-        put ""
+        cls
+        color (red)
         put "Mario:"
         put "The port is closest to Bowser's castle, so..."
         delay (999)
@@ -848,16 +896,17 @@ loop
         delay (999)
         put "Spaghetti(33)"
         get input
-    else
-    end if
+        else
+        end if
 
     if input = 30 then
-        put ""
+        cls
+        color (red)
         put "Mario:"
         put "BOO!"
         delay (999)
         put "Pirate Fox:"
-        put "Not scary. Here's scary:"
+        put "Ooh. Very scary."
         delay (500)
         put "'play FNAF jumpscare'"
         delay (2000)
@@ -872,11 +921,12 @@ loop
         delay (100)
         sfm := 1
         cls
-    else
-    end if
+        else
+        end if
 
-    if input = 31 then % you screwed up here with your numbering, repeating 30 :p
-        put ""
+    if input = 31 then
+        cls
+        color (red)
         put "Mario:"
         put "Punch-Out time!!!!"
         delay (999)
@@ -892,11 +942,12 @@ loop
         delay (100)
         sfm := 1
         cls
-    else
-    end if
+        else
+        end if
 
     if input = 32 then
-        put ""
+        cls
+        color (red)
         put "Mario is about to use SUPER SMASH 360 NOSCOPE PINGAS ATTACK!!!"
         delay (2500)
         put "Mario does not know that move."
@@ -913,11 +964,12 @@ loop
         delay (100)
         sfm := 1
         cls
-    else
-    end if
+        else
+        end if
 
     if input = 33 then
-        put ""
+        cls
+        color (red)
         put "Mario:"
         put "Take this!"
         delay (999)
@@ -935,13 +987,14 @@ loop
         delay (999)
         put "Please type '34' to continue."
         get input
-    else
-    end if
+        else
+        end if
 
     if input = 34 then
-        put ""
+        cls
+        color (red)
         put "Port Toadstool"
-        delay (999)
+        delay (2500)
         put "Peach:"
         put "Mario, help me!"
         delay (999)
@@ -955,11 +1008,12 @@ loop
         delay (999)
         put "...Or press '35' for spaghetti."
         get input
-    else
-    end if
+        else
+        end if
 
     if input = 35 then
-        put ""
+        cls
+        color (red)
         put "Mario:"
         put "Oooh! Spaghetti!"
         delay (999)
@@ -975,19 +1029,20 @@ loop
         put "'Eating noises'"
         delay (2000)
         put "AUGH! HOT HOT HOT!!!"
-        delay (999)
+        delay (1500)
         put "...Oops."
         delay (999)
         put "Please type '36' to continue."
         get input
-    else
-    end if
+        else
+        end if
 
     if input = 36 then
-        put ""
+        cls
         put "???:"
         put "Step right up for the greatest improvement to boats ever!"
         delay (999)
+        color (red)
         put "Mario:"
         put "Huh?"
         delay (999)
@@ -1003,17 +1058,19 @@ loop
         delay (999)
         put "After those pirates!(38)"
         get input
-    else
-    end if
+        else
+        end if
 
     if input = 37 then
-        put ""
+        cls
+        color (red)
         put "Mario:"
         put "Hey! Can I have a boat?"
         delay (999)
         put "Toad:"
         put "No problem!"
         delay (2000)
+        color (red)
         put "Mario:"
         put "Here we go!"
         delay (1500)
@@ -1029,19 +1086,21 @@ loop
         delay (100)
         sfm := 1
         cls
-    else
-    end if
+        else
+        end if
 
     if input = 38 then
-        put ""
+        cls
         put "'Uninspired super spy-like movie scene'"
         delay (5000)
+        color (red)
         put "Mario:"
         put "Gotcha you pirates! Now give me-"
         delay (999)
         put "Captain:"
         put "We give ye what, lad?"
         delay (999)
+        color (red)
         put "Mario:"
         put "...I just want that map."
         delay (999)
@@ -1050,6 +1109,7 @@ loop
         delay (999)
         put "...ye better show us yer a pirate!"
         delay (999)
+        color (red)
         put "Mario:"
         put "Wah!"
         delay (999)
@@ -1059,30 +1119,32 @@ loop
         delay (999)
         put "Show them yer 'booty'(41)" % this is the best line in the game -NotNemesis
         get input
-    else
-    end if
+       else
+       end if
 
-    if input = 39 then
-     put ""
-     put "Mario:"
-     put "You wanna hear a song?"
-    delay (999)
-    put "Pirate Fox:"
-    put "How about no?"
-    delay (1500)
-    put "Mario:"
-    put "Yo-ho-ho, hee-hee-hee, a pirate's life for me-"
-    delay (999)
-    put "BANG!"
-    delay (999)
-    put "Captain:"
-    put "No! Here's a real song:"
-    delay (999)
-    put "We're happy pirates. Watch us play. We wave to our friends. All through the day."
-    delay (1500)
-    colour (12)
-    put "GAME OVER, YEAH!"
-    delay (5000)
+           if input = 39 then
+        cls
+        color (red)
+       put "Mario:"
+       put "You wanna hear a song?"
+       delay (999)
+       put "Pirate Fox:"
+       put "How about no?"
+       delay (1500)
+       color (red)
+       put "Mario:"
+       put "Yar-har, fiddle-dee-dee, being a pirate is alright with me-"
+       delay (999)
+       put "BANG!"
+       delay (999)
+       put "Captain:"
+       put "No! Here's a real song:"
+       delay (999)
+       put "We're happy pirates. Watch us play. We wave to our friends. All through the day."
+       delay (1500)
+       colour (12)
+       put "GAME OVER, YEAH!"
+       delay (5000)
             sfm := 2
             delay (100)
             sfm := 1
@@ -1091,30 +1153,33 @@ loop
         end if
     
          if input = 40 then
-    put ""
-    put "Mario:"
-    put "Let me tell you a story."
-    delay (999)
-    put "Pirate Fox:"
-    put "How about no?"
-    delay (1500)
-    put "Mario:"
-    put "'tells a story about sailing and adventure'"
-    delay (3000)
-    put "Shy Guy Pirate:"
-    put "I think he insulted your mother, Foxy!"
-    delay (999)
-    put "Pirate Fox:"
-    put "WHAT DID YOU SAY!?"
-    delay (999)
-    put "Mario:"
-    put "I was just telling a pir-"
-    delay (999)
-    put "POW!"
-    delay (1500)
-    colour (12)
-    put "GAME OVER, YEAH!"
-    delay (5000)
+      cls
+      color (red)
+      put "Mario:"
+      put "Let me tell you a story."
+      delay (999)
+      put "Pirate Fox:"
+      put "How about no?"
+      delay (1500)
+      color (red)
+      put "Mario:"
+      put "'tells a story about sailing and adventure'"
+      delay (3000)
+      put "Shy Guy Pirate:"
+      put "I think he insulted your mother, Foxy!"
+      delay (999)
+      put "Pirate Fox:"
+      put "WHAT DID YOU SAY!?"
+      delay (999)
+      color (red)
+      put "Mario:"
+      put "I was just telling a pir-"
+      delay (999)
+      put "POW!"
+      delay (1500)
+      colour (12)
+      put "GAME OVER, YEAH!"
+      delay (5000)
             sfm := 2
             delay (100)
             sfm := 1
@@ -1122,97 +1187,105 @@ loop
         else
         end if
         
-            if input = 41 then  
-put ""
-    put "Mario:"
-    put "Let me show you da booty!"
-    delay (999)
-    put "'put Booty Song here'"
-    delay (999)
-    put "Wut."
-  delay (2000)
-  put "Captain:"
-    put "That IS one fine booty..."
-  delay (999)
-    put "Welcome aboard!"
-  delay (999)
-     put "Please type [42] to continue."
-    get input
-    else
-    end if
+         if input = 41 then  
+      cls
+      color (red)
+      put "Mario:"
+      put "Let me show you da booty!"
+      delay (999)
+      put "'put Booty Song here'"
+      delay (999)
+      put "Wut."
+      delay (2000)
+      put "Captain:"
+      put "That IS one fine booty..."
+      delay (999)
+      put "Welcome aboard!"
+      delay (999)
+      put "Please type [42] to continue."
+      get input
+      else
+      end if
 
-if input = 42 then  
-    put ""
-    put "Captain Lardbutt's Ship"
-    delay (2000)
-    put "Captain Lardbutt:"
-    put "Alright lads! We be sailin' for this here island! Heard she has some fine prize!"
-    put "Any questions?"
-    delay (1500)
-    put "Mario:"
-    put "Do you have any food?"
-    delay (999)
-    put "Captain Lardbutt:"
-    put "Yeah, got some grub in th' mess hall. Don't eat all of it!"
-    delay (999)
-    put "Finally, some alone time with me sandvich!"
-    delay (3000)
-    put "WHOM TOUCHED ME SANDVICH!?"
-    delay (999)
-        put "Mario! T'wasn't you, was it?"
-          delay (999)
-        put "Mario:"
-    put "What!? No!"
-    delay (999)
-     put "Captain Lardbutt:"
-    put "I smell mutiny aboard this ship!"
-    delay (999)
-    put "Mario! Find out who took me sandvich!"
-    delay (2000)
-    put "WHO DUNNIT?"
-    delay (999)
-put "Toad aboard!(43)"
-delay (999)
-put "Twas the fox!(44)"
-delay (999)
-put "Twas the Shy Guy!(45)"
-    get input
-    else
-    end if
+        if input = 42 then  
+      cls
+      put "Captain Lardbutt's Ship"
+      delay (2000)
+      put "Captain Lardbutt:"
+      put "Alright lads! We be sailin' for this here island! Heard she has some fine prize!"
+      put "Any questions?"
+      delay (1500)
+      color (red)
+      put "Mario:"
+      put "Do you have any food?"
+      delay (999)
+      put "Captain Lardbutt:"
+      put "Yeah, got some grub in th' mess hall. Don't eat all of it!"
+      delay (999)
+      put "Finally, some alone time with me sandvich!"
+      delay (3000)
+      put "WHOM TOUCHED ME SANDVICH!?"
+      delay (999)
+      put "Mario! T'wasn't you, was it?"
+      delay (999)
+      color (red)
+      put "Mario:"
+      put "What!? No!"
+      delay (999)
+      put "Captain Lardbutt:"
+      put "I smell mutiny aboard this ship!"
+      delay (999)
+      put "Mario! Find out who took me sandvich!"
+      delay (2000)
+      put "WHO DUNNIT?"
+      delay (999)
+      put "Toad aboard!(43)"
+      delay (999)
+      put "Twas the fox!(44)"
+      delay (999)
+      put "Twas the Shy Guy!(45)"
+      get input
+      else
+      end if
     
-        if input = 43 then
-        put ""
-        put "Mario:"
-        put "Hey! A stowaway!"
-        delay (1500)
-        put "Toad:"
-        put "AAAAAAHHHhhhhhh!"
-        delay (2000)
-         put "Captain Lardbutt:"
-    put "Mario... That Toad wasn't even part of our crew."
-    put "Now quit foolin around!"
-        delay (2000)
-       put "WHO DUNNIT?"
-delay (999)
-put "Twas the fox!(44)"
-delay (999)
-put "Twas the Shy Guy!(45)"
-    get input
-    else
-    end if
+         if input = 43 then
+      cls
+      color (red)
+      put "Mario:"
+      put "Hey! A stowaway!"
+      delay (1500)
+      put "Toad:"
+      put "AAAAAAHHHhhhhhh!"
+      delay (2000)
+      put "Captain Lardbutt:"
+      put "Mario... That Toad wasn't even part of our crew."
+      put "Now quit foolin around!"
+      delay (2000)
+      put "WHO DUNNIT?"
+      delay (999)
+      put "Twas the fox!(44)"
+      delay (999)
+      put "Twas the Shy Guy!(45)"
+      get input
+      else
+      end if
 
-    if input = 44 then
-        put ""
+           if input = 44 then
+        cls
+        color (red)
         put "Mario:"
         put "Twas the fox!"
         delay (999)
         put "'dramatic reveal music'"
         delay (3000)
         put "Captain Lardbutt:"
-        put "Alright Foxy! Spit 'er out!
+        put "Alright Foxy! Spit 'er out!"
         delay (999)
+        put "Foxy:"
         put "Blaugh!"
         delay (999)
+        color (red)
+        put "Mario:"
         put "What the f-"
         delay (500)
         put "BOOM!"
@@ -1224,11 +1297,12 @@ put "Twas the Shy Guy!(45)"
         delay (100)
         sfm := 1
         cls
-    else
-    end if
-
-    if input = 45 then
-        put ""
+        else
+        end if
+    
+           if input = 45 then
+        cls
+        color (red)
         put "Mario:"
         put "Twas the Shy Guy!"
         delay (999)
@@ -1245,19 +1319,18 @@ put "Twas the Shy Guy!(45)"
         delay (999)
         put "Please type [42] to continue."
         get input
-    else
-    end if
+        else
+        end if
     
-   if input > 45 then
-put ""
-    put "Sorry lads!"
-    put "'Xpectin' teh cheat yer way through, eh?"
-    put "Well not a chance!"
-    delay (2500)
-end if
+           if input > 45 then
+        cls
+        put "Sorry lads!"
+        put "'Xpectin' teh cheat yer way through, eh?"
+        put "Well not a chance!"
+        delay (2500)
+        end if
     
     end loop
-
     %put "Invalid Input"
     %put "Reloading..."
     %delay (2500)
